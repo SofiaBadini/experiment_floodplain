@@ -24,7 +24,7 @@ jobs:
       - name: create build environment
         uses: mamba-org/provision-with-micromamba@main
         with:
-          environment-file: environment.yml
+          environment-file: environment.conda-lock.yml
           environment-name: gha-testing
           cache-env: true
           extra-specs: |
