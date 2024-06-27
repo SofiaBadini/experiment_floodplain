@@ -6,7 +6,7 @@ three .csv files, all saved in *bld/data/survey_recipients*:
       between the population and (both unweighted and weighted) sample.
     - ``main_qualtrics.csv``, which has the same dimensions of ``main_sample.csv``
       but only contains variables needed for the qualtrics survey, again including unique
-      codes to be used as `authenticators.
+      codes to be used as authenticators.
 
 """
 

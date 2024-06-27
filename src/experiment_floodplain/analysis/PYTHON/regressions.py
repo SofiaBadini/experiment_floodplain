@@ -100,7 +100,7 @@ def run_wls_regressions(data, outcomes, depvar):
 
 def weighted_least_squares_regression(df, outcome, dep_vars):
     """Run weighted least squares regression on Pandas.DataFrame
-    `df`, according to `formula`. `df needs to contain columns
+    `df`, according to `formula`. `df` needs to contain columns
     "WEIGHTS" and "treatment".
 
     Args:

@@ -1,7 +1,7 @@
 """This script downloads publicly available data necessary for the replication of this paper 
 (available via `4TU.ResearchData`_) and saves them to *bld/replication_data*. The datasets are the following:
 
-.. _4TU.ResearchData: https://data.4tu.nl/datasets/46fa1840-6522-45cd-b36c-038b259c4c95
+  .. _4TU.ResearchData: https://data.4tu.nl/datasets/46fa1840-6522-45cd-b36c-038b259c4c95
 
 - **BAG data**: The *BAG* folder contains data about all the (full) addresses in the Netherlands, 
   derived from the `Addresses and Buildings Key Registry`_ (*Basisregistraties Adressen en Gebouwen*, or BAG) 
@@ -17,8 +17,7 @@
 - **ENW data**: The *ENW* folder contains shapefiles representing those areas of the 
   Southern regions of The Netherlands (Limburg and North Brabant) that were flooded in July 2021.
   These maps have been shared by the  `ENW`_ (*Expertise Netwerk Waterveiligheid*), the association 
-  of Dutch flood protection specialists, via the `4TU.ResearchData`_ repository of Delft University 
-  of Technology (TU Delft).
+  of Dutch flood protection specialists, via the 4TU.ResearchData repository.
 
   The maps are based on best available information collected via aerial photography and during 
   fieldwork at the flooded sites, and include realized inundation extent (in the sub-folders 
@@ -27,7 +26,6 @@
   (in the sub-folder *incidents*).
 
   .. _ENW: https://www.enwinfo.nl/
-  .. _4TU.ResearchData: https://www.tudelft.nl/library/collecties/4turesearchdata
 
 - **Risicokaart data**: The *RISICOKAART* folder contains shapefiles of the flood maps developed for the European Floods
   Directive (ROR2) delivered at the end of 2019, obtained in October 2021 by contacting 

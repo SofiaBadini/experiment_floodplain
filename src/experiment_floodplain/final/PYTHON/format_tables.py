@@ -35,7 +35,7 @@ def get(data, index1, index2=None):
 
 def update(key, n_keys, values, kwargs=kwargs):
     """Create dictionary from `key`, `n_keys` and `values`
-    and update whatever `kwargs `dictionary is in the global space.
+    and update whatever `kwargs` dictionary is in the global space.
 
     """
     keys = [f"{key}{i}" for i in range(1, n_keys + 1)]

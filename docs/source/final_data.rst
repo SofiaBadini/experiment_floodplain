@@ -19,7 +19,7 @@ of the same codebook is provided with the survey data in
 .. csv-table:: Codebook
     :widths: 20, 30, 15, 20, 20
     :delim: ;
-    :file: ../docs/source/csv/final_variables.csv
+    :file: csv/final_variables.csv
     :header-rows: 1
     :class: longtable
 

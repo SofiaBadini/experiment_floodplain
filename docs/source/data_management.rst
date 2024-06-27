@@ -49,10 +49,18 @@ Script ``task_download_data.py``
 
 Script ``generate_synthetic_data.py``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In folder *generate_synthetic_data*.
-.. automodule:: experiment_floodplain.data_management.task_download_data.generate_synthetic_data.generate_synthetic_data
-    :members:
+In the folder *generate_synthetic_data*.
 
+This script generates synthetic survey data based on the original one, using the
+python package `Synthetic Data Vault`_ (this package is not part of the environment
+and needs to be installed separately, in case you want to run this script).
+The resulting dataset, ``synthetic_survey_data.csv``, is downloaded to *bld/replication_data/SURVEY*.
+
+.. note::
+
+  This task is not part of the project workflow.
+
+.. _Synthetic Data Vault: https://docs.sdv.dev/sdv
 
 Scripts for Task 2: creating the target population
 --------------------------------------------------

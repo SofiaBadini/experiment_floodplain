@@ -103,9 +103,9 @@ html_theme = "insipid"
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-html_theme_options = {
-    'page_width': 'auto'
-}
+#html_theme_options = {
+#    'page_width': 'auto'
+#}
 
 # For colors
 rst_prolog = """
