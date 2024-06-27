@@ -1,0 +1,72 @@
+\begin{{table}}[ht]
+\caption{{Heterogeneous effects by self-reported flood experience}}
+\small
+\centering
+\noindent\adjustbox{{max width=1.05\textwidth}}{{%
+%\setlength\extrarowheight{{-5pt}}
+\begin{{tabular}}{{m{{2ex}}m{{3cm}}*{{8}}{{cccccccc}}}}
+\toprule
+\multicolumn{{2}}{{c}}{{}}
+&
+\multicolumn{{5}}{{c}}{{Belief update}}
+ &
+\multicolumn{{2}}{{c}}{{WTP}}
+\\
+\cmidrule(lr){{3-7}} 
+\cmidrule(lr){{8-9}} 
+\multicolumn{{2}}{{M{{1cm}}}}{{}}
+ &
+ \multicolumn{{1}}{{M{{2.15cm}}}}{{10-year flood prob.}}
+ &
+ \multicolumn{{1}}{{M{{2.15cm}}}}{{Damages (kEUR)}}
+ &
+  \multicolumn{{1}}{{M{{2.15cm}}}}{{Tot comp. (\%)}}
+ &
+ \multicolumn{{1}}{{M{{2.21cm}}}}{{Govt. comp. (\%)}}
+ &
+  \multicolumn{{1}}{{M{{2.15cm}}}}{{Worry}}
+ &
+ \multicolumn{{1}}{{M{{2.15cm}}}}{{Ins.}}
+ &
+ \multicolumn{{1}}{{M{{2.15cm}}}}{{Info.}} 
+ \\
+ \midrule
+\multirow[t]{{9}}{{*}}{{Treatment}} \\
+ & Risk profile & {a1} & {a2} & {a3} & {a4} & {a5} & {a6} & {a7} \\
+& & ({sa1}) & ({sa2}) & ({sa3}) & ({sa4}) & ({sa5}) & ({sa6}) & ({sa7})  \\
+& & [{pa1}] & [{pa2}] & [{pa3}] & [{pa4}] & [{pa5}] & [{pa6}] & [{pa7}] \\
+  & Govt. comp. & {b1} & {b2} & {b3} & {b4} & {b5} & {b6} & {b7} \\
+& & ({sb1}) & ({sb2}) & ({sb3}) & ({sb4}) & ({sb5}) & ({sb6}) & ({sb7})  \\
+& & [{pb1}] & [{pb2}] & [{pb3}] & [{pb4}] & [{pb5}] & [{pb6}] & [{pb7}] \\
+  & Insurance & {c1} & {c2} & {c3} & {c4} & {c5} & {c6} & {c7} \\
+& & ({sc1}) & ({sc2}) & ({sc3}) & ({sc4}) & ({sc5}) & ({sc6}) & ({sc7})  \\
+& & [{pc1}] & [{pc2}] & [{pc3}] & [{pc4}] & [{pc5}] & [{pc6}] & [{pc7}] \\
+ \rule{{0pt}}{{1ex}} \\
+ \multirow[t]{{1}}{{*}}{{Flooded}} & & {d1} & {d2} & {d3} & {d4} & {d5} & {d6} & {d7} \\
+& & ({sd1}) & ({sd2}) & ({sd3}) & ({sd4}) & ({sd5}) & ({sd6}) & ({sd7})  \\
+& & [{pd1}] & [{pd2}] & [{pd3}] & [{pd4}] & [{pd5}] & [{pd6}] & [{pd7}] \\
+ \multirow[t]{{1}}{{*}}{{Flooded $\times$ Risk profile}} & & {e1} & {e2} & {e3} & {e4} & {e5} & {e6} & {e7} \\
+& & ({se1}) & ({se2}) & ({se3}) & ({se4}) & ({se5}) & ({se6}) & ({se7})  \\
+& & [{pe1}] & [{pe2}] & [{pe3}] & [{pe4}] & [{pe5}] & [{pe6}] & [{pe7}] \\
+ \multirow[t]{{1}}{{*}}{{Flooded $\times$ Govt. comp.}} & & {f1} & {f2} & {f3} & {f4} & {f5} & {f6} & {f7} \\
+& & ({sf1}) & ({sf2}) & ({sf3}) & ({sf4}) & ({sf5}) & ({sf6}) & ({sf7})  \\
+& & [{pf1}] & [{pf2}] & [{pf3}] & [{pf4}] & [{pf5}] & [{pf6}] & [{pf7}] \\
+\multirow[t]{{1}}{{*}}{{Flooded $\times$ Insurance}} & & {g1} & {g2} & {g3} & {g4} & {g5} & {g6} & {g7} \\
+& & ({sg1}) & ({sg2}) & ({sg3}) & ({sg4}) & ({sg5}) & ({sg6}) & ({sg7})  \\
+& & [{pg1}] & [{pg2}] & [{pg3}] & [{pg4}] & [{pg5}] & [{pg6}] & [{pg7}] \\
+ \rule{{0pt}}{{1ex}} \\
+ \multirow[t]{{1}}{{*}}{{Controls}} & & x & x & x & x & x & x & x \\
+ \multirow[t]{{1}}{{*}}{{Baseline mean}} & & 12.95 & 29 & 50.42 & 43.09 & 1.97 & 19.88 & 3.34 \\
+ \multirow[t]{{1}}{{*}}{{Number of obs.}} & & {n1} & {n2} & {n3} & {n4} & {n5} & {n6} & {n7} \\
+ \bottomrule
+\end{{tabular}}}}
+
+\medskip
+\footnotesize
+\justifying
+\begin{{adjustwidth}}{{0pt}}{{-40pt}}
+\hspace{{\parindent}} \textit{{Notes}}: This table presents treatment effects by self-reported flood experience, measured via an affirmative response to the question "Did you experience damages during the floods in Limburg in July 2021?". The baseline mean refers to survey participants who were not exposed to floods in the "neutral text" treatment arm. Damages and WTP for insurance are winsorized at the 97.5th percentile. P-values are unadjusted for multiple hypotheses testing. Stars indicate: *** 1 percent ** 5 percent * 10 percent level of significance.
+\end{{adjustwidth}}
+
+\label{{tab:outcomes-flood}}
+\end{{table}}

@@ -1,0 +1,97 @@
+%%% MAIN
+\usepackage[top=4cm, bottom=4cm, left=4cm, right=4cm]{geometry}
+\renewcommand{\baselinestretch}{1.1} %1.2 for larger interline
+\usepackage[T1]{fontenc}
+
+%%% Where are the images?
+\usepackage{float}
+\usepackage{graphicx}
+\graphicspath{ {images} }
+\usepackage{subcaption}
+\usepackage[labelfont=bf, justification=centering]{caption}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage[english]{babel}
+\usepackage{longtable}
+\usepackage{adjustbox}
+\usepackage{ragged2e}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% LATEX STOP MOVING MY GODDAMN TABLES
+\usepackage{placeins}
+
+% To include 
+\usepackage[final]{pdfpages}
+
+% include lines
+\usepackage[modulo]{lineno}
+
+% Remove dots from table of content
+\usepackage[titles]{tocloft}
+\renewcommand{\cftdot}{}
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+
+% ... am I a New Century Schoolbook girl?
+\usepackage{fouriernc}
+
+%%% Section title not bold, roman numbers 
+\usepackage{titlesec}
+\renewcommand{\thesection}{\Roman{section}}
+\titleformat{\section}
+  {\nolinenumbers\centering\normalfont\scshape\fontfamily{phv}\fontsize{16}{19}}{\thesection. \space}{0.15em}{}
+\renewcommand{\thesubsection}{\Alph{subsection}}
+\titleformat{\subsection}
+  {\nolinenumbers\normalfont\itshape\fontfamily{phv}\fontsize{16}{19}}{\thesubsection. \space}{0.15em}{}
+
+\titleformat{\subsubsection}{\nolinenumbers\normalfont\bf\fontfamily{phv}\fontsize{16}{19}}{\hspace{2em} \thesubsubsection. \space}{0.15em}{}
+  
+%%% Hyperlink
+\usepackage{xcolor}
+\definecolor{blue}{RGB}{0007,0082,0154}
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks = true,
+	linkcolor = black,
+	urlcolor = blue,
+	citecolor = blue,
+	}
+
+%%% Bibliography
+\usepackage[backend=biber, style=apa, sorting=nyt, url=false, doi=true]{biblatex}
+\addbibresource{bibliography.bib}
+
+%%% Do not print DOI url
+\DeclareFieldFormat{doi}{%
+  \mkbibacro{DOI}\addcolon\space
+  \ifhyperref
+    {\href{https://doi.org/#1}{\nolinkurl{#1}}}
+    {\nolinkurl{#1}}}
+    
+%%% Make abstract a bit wider
+\renewenvironment{abstract}
+ {\small
+  \begin{center}
+  \bfseries \abstractname\vspace{-.5em}\vspace{0pt}
+  \end{center}
+  \list{}{%
+    \setlength{\leftmargin}{8mm}% <---------- CHANGE HERE
+    \setlength{\rightmargin}{\leftmargin}%
+  }%
+  \item\relax}
+ {\endlist}
+
+%%% For tabular environment: new column type which is "m" but horizontally and vertically centered
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{L}[1]{>{\arraybackslash}m{#1}}
+
+%%%% Orientation and margins
+\usepackage{pdflscape}
+\usepackage{changepage}
+
+%%%% Force footnote on same page
+\interfootnotelinepenalty=10000

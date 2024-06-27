@@ -1,0 +1,7 @@
+table.longtable {
+    display: block;
+    height: 500px;
+    overflow-y: scroll;
+    width: 100%;
+    font-size: smaller;
+  }

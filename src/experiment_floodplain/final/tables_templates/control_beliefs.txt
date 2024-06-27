@@ -1,0 +1,77 @@
+\begin{{table}}[H]
+\caption{{Belief updating in active control}}
+\small
+\centering
+\noindent\adjustbox{{max width=\textwidth}}{{%
+\setlength\extrarowheight{{-3.5pt}}
+\begin{{tabular}}{{m{{1ex}}m{{2cm}}*{{4}}{{M{{3.5cm}} M{{3cm}} M{{3.5cm}} M{{3cm}}}}}}
+\toprule
+ & & 10-year flood prob. & Damages (kEUR) & Tot comp. & Govt. comp. \\
+ \cmidrule(l){{3-6}}
+\multicolumn{{2}}{{c}}{{}}
+ &
+\multicolumn{{4}}{{c}}{{Prior Beliefs}} \\
+\midrule
+\multirow[t]{{1}}{{*}}{{Min.}} 
+& & {a1} & {a2} & {a3} & {a4} \\
+\multirow[t]{{1}}{{*}}{{25th quantile}} & & {b1} & {b2} & {b3} & {b4} \\
+\multirow[t]{{1}}{{*}}{{Mean}} 
+& & {c1} & {c2} & {c3} & {c4} \\
+\multirow[t]{{1}}{{*}}{{Median}} 
+& & {d1} & {d2} & {d3} & {d4} \\
+\multirow[t]{{1}}{{*}}{{75th quantile}}
+& & {e1} & {e2} & {e3} & {e4} \\
+\multirow[t]{{1}}{{*}}{{Max.}} 
+& & {f1} & {f2} & {f3} & {f4} \\
+\multirow[t]{{1}}{{*}}{{SD}} 
+& & {g1} & {g2} & {g3} & {g4} \\
+\multirow[t]{{1}}{{*}}{{MAD}} 
+& & {h1} & {h2} & {h3} & {h4} \\
+\cmidrule(l){{3-6}}
+ \multicolumn{{2}}{{c}}{{}}
+ &
+\multicolumn{{4}}{{c}}{{Posterior Beliefs}} \\
+\midrule
+\multirow[t]{{1}}{{*}}{{Min.}} 
+& & {aa1} & {aa2} & {aa3} & {aa4} \\
+\multirow[t]{{1}}{{*}}{{25th quantile}} & & {ab1} & {ab2} & {ab3} & {ab4}\\
+\multirow[t]{{1}}{{*}}{{Mean}} 
+& & {ac1} & {ac2} & {ac3} & {ac4} \\
+\multirow[t]{{1}}{{*}}{{Median}} 
+& & {ad1} & {ad2} & {ad3} & {ad4} \\
+\multirow[t]{{1}}{{*}}{{75th quantile}}
+& & {ae1} & {ae2} & {ae3} & {ae4} \\
+\multirow[t]{{1}}{{*}}{{Max.}} 
+& & {af1} & {af2} & {af3} & {af4} \\
+\multirow[t]{{1}}{{*}}{{SD}} 
+& & {ag1} & {ag2} & {ag3} & {ag4} \\
+\multirow[t]{{1}}{{*}}{{MAD}} 
+& & {ah1} & {ah2} & {ah3} & {ah4} \\
+\cmidrule(l){{3-6}}
+\multicolumn{{2}}{{c}}{{}}
+ &
+ \multicolumn{{4}}{{c}}{{Update size}} \\
+\midrule
+\multirow[t]{{1}}{{*}}{{Min.}} 
+& & {ba1} & {ba2} & {ba3} & {ba4} \\
+\multirow[t]{{1}}{{*}}{{25th quantile}} 
+& & {bb1} & {bb2} & {bb3} & {bb4} \\
+\multirow[t]{{1}}{{*}}{{Mean}} 
+& & {bc1} & {bc2} & {bc3} & {bc4} \\
+\multirow[t]{{1}}{{*}}{{Median}} 
+& & {bd1} & {bd2} & {bd3} & {bd4} \\
+\multirow[t]{{1}}{{*}}{{75th quantile}}
+& & {be1} & {be2} & {be3} & {be4} \\
+\multirow[t]{{1}}{{*}}{{Max.}} 
+& & {bf1} & {bf2} & {bf3} & {bf4} \\
+\multirow[t]{{1}}{{*}}{{SD}} 
+& & {bg1} & {bg2} & {bg3} & {bg4} \\
+\bottomrule
+\end{{tabular}}}}
+
+\medskip
+\footnotesize
+\justifying
+\textit{{Notes}}: This table reports summary statistics of prior beliefs, posterior beliefs, and update size in the active control ("neutral text" treatment arm).
+\label{{tab:control_beliefs}}
+\end{{table}}

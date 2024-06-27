@@ -1,0 +1,14 @@
+CATEGORY;DESCRIPTION;VARLEVEL;VARNAME
+Housing;House area, in m2;address;OBJECTAREA
+Housing;Construction year;address;CONSTRUCTIONYEAR
+Flood risk;Return period: 1 in 100 years;address;FLOOD_MAX_100
+Flood risk;Return period: 1 in 1000 years;address;FLOOD_MAX_1000
+Flood risk;Return period: 1 in 10000 years;address;FLOOD_MAX_10000
+Maximum water depth;< 0.5m;address;waterdepth_max_less_than_05m
+Maximum water depth;Between 0.5 and 1m;address;waterdepth_max_between_05_and_1m
+Maximum water depth;Between 1 and 1.5m;address;waterdepth_max_between_1_and_15m
+Maximum water depth;Between 1.5 and 2m;address;waterdepth_max_between_15_and_2m
+Maximum water depth;Between 2 and 5m;address;waterdepth_max_between_2_and_5m
+Maximum water depth;> 5m;address;waterdepth_max_more_than_5m
+Flood risk;In July 2021 floodplain;address;FLOODED
+Flood risk;Distance from flooded areas, in meters;address;dist_floodareas

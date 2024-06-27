@@ -1,0 +1,63 @@
+\begin{{table}}[{{ht}}]
+\caption{{Interaction with baseline information frictions, by topic}}
+\small
+\centering
+\noindent\adjustbox{{max width=1.05\textwidth}}{{%
+%\setlength\extrarowheight{{-5pt}}
+\begin{{tabular}}{{m{{3ex}}m{{3cm}}*{{5}}{{ccccc}}}}
+\toprule
+\multicolumn{{2}}{{c}}{{}}
+&
+\multicolumn{{4}}{{c}}{{Belief update}}
+\\
+\cmidrule(lr){{3-6}} 
+\multicolumn{{2}}{{M{{5.5cm}}}}{{}}
+ &
+ \multicolumn{{1}}{{M{{2.5cm}}}}{{10-year flood prob.}}
+ &
+ \multicolumn{{1}}{{M{{2.5cm}}}}{{Damages (kEUR)}}
+ &
+  \multicolumn{{1}}{{M{{2.5cm}}}}{{Tot comp. (\%)}}
+ &
+ \multicolumn{{1}}{{M{{2.5cm}}}}{{Govt. comp. (\%) }}
+ \\
+ \midrule
+\multirow[t]{{9}}{{*}}{{Treatment}} \\
+ & Risk profile & {a1} & {a2} & {a3} & {a4} \\
+& & ({sa1}) & ({sa2}) & ({sa3}) & ({sa4}) \\
+& & [{pa1}] & [{pa2}] & [{pa3}] & [{pa4})] \\
+ & Govt. comp.  & {b1} & {b2} & {b3} & {b4} \\
+& & ({sb1}) & ({sb2}) & ({sb3}) & ({sb4}) \\
+& & [{pb1}] & [{pb2}] & [{pb3}] & [{pb4})] \\
+& Insurance & {c1} & {c2} & {c3} & {c4} \\
+& & ({sc1}) & ({sc2}) & ({sc3}) & ({sc4}) \\
+& & [{pc1}] & [{pc2}] & [{pc3}] & [{pc4})] \\
+ \rule{{0pt}}{{1ex}} \\
+ \multirow[t]{{1}}{{*}}{{Frictions by topic}} & & {d1} & {d2} & {d3} & {d4} \\
+& & ({sd1}) & ({sd2}) & ({sd3}) & ({sd4}) \\
+& & [{pd1}] & [{pd2}] & [{pd3}] & [{pd4})] \\
+ \rule{{0pt}}{{1ex}} \\
+ \multirow[t]{{1}}{{*}}{{Frictions by topic $\times$ Risk profile}} & & {e1} & {e2} & {e3} & {e4} \\
+& & ({se1}) & ({se2}) & ({se3}) & ({se4}) \\
+& & [{pe1}] & [{pe2}] & [{pe3}] & [{pe4})] \\
+ \multirow[t]{{1}}{{*}}{{Frictions by topic $\times$ Govt. comp.}} & & {f1} & {f2} & {f3} & {f4} \\
+& & ({sf1}) & ({sf2}) & ({sf3}) & ({sf4}) \\
+& & [{pf1}] & [{pf2}] & [{pf3}] & [{pf4})] \\
+\multirow[t]{{1}}{{*}}{{Frictions by topic $\times$ Insurance}} & & {g1} & {g2} & {g3} & {g4} \\
+& & ({sg1}) & ({sg2}) & ({sg3}) & ({sg4}) \\
+& & [{pg1}] & [{pg2}] & [{pg3}] & [{pg4})] \\
+ \rule{{0pt}}{{1ex}} \\
+ \multirow[t]{{1}}{{*}}{{Controls}} & & x & x & x & x \\
+ \multirow[t]{{1}}{{*}}{{Number of obs.}} & & {n1} & {n2} & {n3} & {n4} \\
+ \bottomrule
+\end{{tabular}}}}
+
+\medskip
+\footnotesize
+\justifying
+\begin{{adjustwidth}}{{0pt}}{{-40pt}}
+\hspace{{\parindent}} \textit{{Notes}}: This table presents the interaction effect of treatment with information frictions, by topic. Frictions for beliefs over 10-year flood probability and damages (first and second columns) are computed, respectively, as the difference between true and stated flood maps category. Frictions for total and government compensation (third and forth columns) is defined as a dummy variable that takes value 1 if the survey respondent answered incorrectly to at least one of the two WTS-related questions, and 0 otherwise. I use robust standard errors, and sample inclusion probabilities as regressions weights. Standard errors are between parentheses. The p-values (between square brackets) are unadjusted for multiple hypotheses testing. Stars indicate: *** 1 percent ** 5 percent * 10 percent level of significance.
+\end{{adjustwidth}}
+
+\label{{tab:friction-topic}}
+\end{{table}}

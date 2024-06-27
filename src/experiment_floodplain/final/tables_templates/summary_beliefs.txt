@@ -1,0 +1,36 @@
+\begin{{table}}[H]
+\caption{{Baseline beliefs}}
+\small
+\centering
+\noindent\adjustbox{{max width=\textwidth}}{{%
+\begin{{tabular}}{{m{{1ex}}m{{2.5cm}}*{{5}}{{M{{2cm}} M{{2cm}} M{{2.8cm}} M{{2.8cm}}}}}}
+\toprule
+ & & 10-year flood prob. & Damages (kEUR) & Compensated damages (\%) & Government compensation (\%)\\
+  \midrule
+ %\rule{{0pt}}{{1ex}} \\
+\multirow[t]{{1}}{{*}}{{Min.}} 
+& & {a1} & {a2} & {a3} & {a4} \\
+\multirow[t]{{1}}{{*}}{{25th quantile}} & & {b1} & {b2} & {b3} & {b4} \\
+\multirow[t]{{1}}{{*}}{{Mean}} 
+& & {c1} & {c2} & {c3} & {c4} \\
+\multirow[t]{{1}}{{*}}{{Median}} 
+& & {d1} & {d2} & {d3} & {d4} \\
+\multirow[t]{{1}}{{*}}{{75th quantile}}
+& & {e1} & {e2} & {e3} & {e4} \\
+\multirow[t]{{1}}{{*}}{{Max.}} 
+& & {f1} & {f2} & {f3} & {f4} \\
+\rule{{0pt}}{{1ex}} \\
+\multirow[t]{{1}}{{*}}{{SD}} 
+& & {g1} & {g2} & {g3} & {g4} \\
+\multirow[t]{{1}}{{*}}{{MAD}} 
+& & {h1} & {h2} & {h3} & {h4} \\
+\bottomrule
+\end{{tabular}}}}
+
+\medskip
+\footnotesize
+\justifying
+\textit{{Notes}}: This table reports summary statistics of baseline reported beliefs. We include standard deviation (SD) and Mean Absolute Deviation (MAD) as measures of dispersion. Government compensation is the percentage of total compensated damages (reported under the ``Compensated damages'' column) that survey respondents believe would be paid out by the government. Therefore, the percentage of total damages compensated by the government can be computed as ``Compensated damages'' times ``Government compensation''.
+
+\label{{tab:summary_beliefs}}
+\end{{table}}

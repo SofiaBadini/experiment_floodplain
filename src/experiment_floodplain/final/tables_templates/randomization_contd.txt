@@ -1,0 +1,92 @@
+\begin{{table}}[H]
+\ContinuedFloat
+\caption{{Randomization integrity (continued)}}
+\small
+\centering
+\noindent\adjustbox{{max width=\textwidth}}{{%
+%\setlength\extrarowheight{{-2pt}}
+\begin{{tabular}}{{m{{1.5ex}}m{{3.25cm}}*{{10}}{{cccccccccc}}}}
+\toprule
+\multicolumn{{2}}{{c}}{{}}
+ &
+\multicolumn{{4}}{{c}}{{Mean and std.}}
+ &
+\multicolumn{{6}}{{c}}{{Mean difference}}
+\\
+\cmidrule(lr){{3-6}} 
+\cmidrule(lr){{7-12}} 
+\multicolumn{{2}}{{M{{1.25cm}}}}{{}}
+ &
+ \multicolumn{{1}}{{M{{1.25cm}}}}{{T1}}
+ &
+ \multicolumn{{1}}{{M{{1.25cm}}}}{{T2}}
+ &
+  \multicolumn{{1}}{{M{{1.25cm}}}}{{T3}}
+ &
+ \multicolumn{{1}}{{M{{1.25cm}}}}{{T4}} 
+  &
+\multicolumn{{1}}{{M{{1.5cm}}}}{{T1 vs. T2}}
+ &
+ \multicolumn{{1}}{{M{{1.5cm}}}}{{T1 vs. T3}}
+ &
+ \multicolumn{{1}}{{M{{1.5cm}}}}{{T1 vs. T4}} 
+  &
+ \multicolumn{{1}}{{M{{1.5cm}}}}{{T2 vs. T3}} 
+   &
+ \multicolumn{{1}}{{M{{1.5cm}}}}{{T2 vs. T4}} 
+    &
+ \multicolumn{{1}}{{M{{1.5cm}}}}{{T3 vs. T4}} 
+ \\
+ \midrule
+   \multirow[t]{{1}}{{*}}{{Homeowner}}
+ & & {a1} & {a2} & {a3} & {a4} & {a5} & {a6} & {a7} & {a8} & {a9} & {a10} \\
+ & & ({sa1}) & ({sa2}) & ({sa3}) & ({sa4}) & [{sa5}] & [{sa6}] & [{sa7}] & [{sa8}] & [{sa9}] & [{sa10}] \\
+ \multirow[t]{{2}}{{*}}{{Household income}} \\
+ & < 2500EUR & {b1} & {b2} & {b3} & {b4} & {b5} & {b6} & {b7} & {b8} & {b9} & {b10} \\
+ & & ({sb1}) & ({sb2}) & ({sb3}) & ({sb4}) & [{sb5}] & [{sb6}] & [{sb7}] & [{sb8}] & [{sb9}] & [{sb10}] \\
+  & 2500EUR+ & {c1} & {c2} & {c3} & {c4} & {c5} & {c6} & {c7} & {c8} & {c9} & {c10} \\
+ & & ({sc1}) & ({sc2}) & ({sc3}) & ({sc4}) & [{sc5}] & [{sc6}] & [{sc7}] & [{sc8}] & [{sc9}] & [{sc10}] \\
+  \multirow[t]{{3}}{{*}}{{Household size}} \\
+ & 1 & {d1} & {d2} & {d3} & {d4} & {d5} & {d6} & {d7} & {d8} & {d9} & {d10} \\
+ & & ({sd1}) & ({sd2}) & ({sd3}) & ({sd4}) & [{sd5}] & [{sd6}] & [{sd7}] & [{sd8}] & [{sd9}] & [{sd10}] \\
+  & 2 & {e1} & {e2} & {e3} & {e4} & {e5} & {e6} & {e7} & {e8} & {e9} & {e10} \\
+ & & ({se1}) & ({se2}) & ({se3}) & ({se4}) & [{se5}] & [{se6}] & [{se7}] & [{se8}] & [{se9}] & [{se10}] \\
+   & 3+ & {f1} & {f2} & {f3} & {f4} & {f5} & {f6} & {f7} & {f8} & {f9} & {f10} \\
+ & & ({sf1}) & ({sf2}) & ({sf3}) & ({sf4}) & [{sf5}] & [{sf6}] & [{sf7}] & [{sf8}] & [{sf9}] & [{sf10}] \\
+  \rule{{0pt}}{{1ex}} \\
+ \multirow[t]{{1}}{{*}}{{Reside 10y+}}
+ & & {g1} & {g2} & {g3} & {g4} & {g5} & {g6} & {g7} & {g8} & {g9} & {g10} \\
+ & & ({sg1}) & ({sg2}) & ({sg3}) & ({sg4}) & [{sg5}] & [{sg6}] & [{sg7}] & [{sg8}] & [{sg9}] & [{sg10}] \\
+ \multirow[t]{{1}}{{*}}{{Plan to reside 10y+}}
+ & & {h1} & {h2} & {h3} & {h4} & {h5} & {h6} & {h7} & {h8} & {h9} & {h10} \\
+ & & ({sh1}) & ({sh2}) & ({sh3}) & ({sh4}) & [{sh5}] & [{sh6}] & [{sh7}] & [{sh8}] & [{sh9}] & [{sh10}] \\
+  \multirow[t]{{1}}{{*}}{{Flood damages 2021}}
+ & & {i1} & {i2} & {i3} & {i4} & {i5} & {i6} & {i7} & {i8} & {i9} & {i10} \\
+ & & ({si1}) & ({si2}) & ({si3}) & ({si4}) & [{si5}] & [{si6}] & [{si7}] & [{si8}] & [{si9}] & [{si10}] \\
+ \multirow[t]{{2}}{{*}}{{Max. water depth}} \\
+ & Less than 0.5m & {j1} & {j2} & {j3} & {j4} & {j5} & {j6} & {j7} & {j8} & {j9} & {j10} \\
+ & & ({sj1}) & ({sj2}) & ({sj3}) & ({sj4}) & [{sj5}] & [{sj6}] & [{sj7}] & [{sj8}] & [{sj9}] & [{sj10}] \\
+  & More than 2m & {k1} & {k2} & {k3} & {k4} & {k5} & {k6} & {k7} & {k8} & {k9} & {k10} \\
+ & & ({sk1}) & ({sk2}) & ({sk3}) & ({sk4}) & [{sk5}] & [{sk6}] & [{sk7}] & [{sk8}] & [{sk9}] & [{sk10}] \\
+ \multirow[t]{{3}}{{*}}{{Return period}} \\
+ & 1 in 100y & {l1} & {l2} & {l3} & {l4} & {l5} & {l6} & {l7} & {l8} & {l9} & {l10} \\
+ & & ({sl1}) & ({sl2}) & ({sl3}) & ({sl4}) & [{sl5}] & [{sl6}] & [{sl7}] & [{sl8}] & [{sl9}] & [{sl10}] \\
+  & 1 in 1,000y & {m1} & {m2} & {m3} & {m4} & {m5} & {m6} & {m7} & {m8} & {m9} & {m10} \\
+ & & ({sm1}) & ({sm2}) & ({sm3}) & ({sm4}) & [{sm5}] & [{sm6}] & [{sm7}] & [{sm8}] & [{sm9}] & [{sm10}] \\
+   & 1 in 10,000y & {n1} & {n2} & {n3} & {n4} & {n5} & {n6} & {n7} & {n8} & {n9} & {n10} \\
+ & & ({sn1}) & ({sn2}) & ({sn3}) & ({sn4}) & [{sn5}] & [{sn6}] & [{sn7}] & [{sn8}] & [{sn9}] & [{sn10}] \\
+ \rule{{0pt}}{{1ex}} \\
+  \multirow[t]{{1}}{{*}}{{In 2021 floodplain}}
+ & & {o1} & {o2} & {o3} & {o4} & {o5} & {o6} & {o7} & {o8} & {o9} & {o10} \\
+ & & ({so1}) & ({so2}) & ({so3}) & ({so4}) & [{so5}] & [{so6}] & [{so7}] & [{so8}] & [{so9}] & [{so10}] \\
+\rule{{0pt}}{{1ex}} \\
+\multirow[t]{{1}}{{*}}{{Number of obs.}} & & 223 & 223 & 224 & 214 & & & & \\
+ \bottomrule
+\end{{tabular}}}}
+
+\medskip
+\footnotesize
+\justifying
+\textit{{Notes}}: Continuation of Table~\ref{{tab:randomization}}.
+\label{{tab:randomization-contd}}
+\end{{table}}

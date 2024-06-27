@@ -1,0 +1,55 @@
+\begin{{table}}[!ht]
+\caption{{Sample covariates}}
+\small
+\centering
+\noindent\adjustbox{{max width=\textwidth}}{{%
+\begin{{tabular}}{{m{{1ex}}m{{5cm}}*{{6}}{{m{{2cm}} m{{2cm}} m{{1.5cm}} m{{2cm}} m{{2cm}}}}}}
+\toprule
+ & Sample demographics & Survey resp. & Survey resp. (weighted) & Survey recip. & Survey recip. (weighted) & Full sample \\
+ \midrule
+ \multirow[t]{{1}}{{*}}{{Number of individuals}} & & {n1} & {n2} & {n3} & {n4} & {n5} \\
+\rule{{0pt}}{{1ex}} \\
+\multirow[t]{{1}}{{*}}{{Male}} & & {m1} & {m2} & & & \\
+\multirow[t]{{1}}{{*}}{{Dutch}} & & {d1} & {d2} & & & \\
+\multirow[t]{{4}}{{*}}{{Age}} \\ & 25-44 & {a1} & {a2} & & & \\
+ & 45-64 & {a3} & {a4} & & & \\
+ & 65+ & {a5} & {a6} & & & \\
+ \multirow[t]{{3}}{{*}}{{Education}} \\ 
+& HBO & {e1} & {e2} & & & \\
+& WO & {e3} & {e4} & & & \\
+\multirow[t]{{1}}{{*}}{{Born in the municipality}} & & {b1} & {b2} & & & \\
+\multirow[t]{{4}}{{*}}{{Time resident}} \\ & < 1 year & {t1} & {t2} & & & \\
+ & 1-5 years & {t3} & {t4} & & & \\
+ & 5-10 years & {t5} & {t6} & & & \\
+& 10-20 years & {t7} & {t8} & & & \\
+ & > 20 years & {t9} & {t10} & & & \\
+ \multirow[t]{{4}}{{*}}{{Household size}} \\ & 1 & {h1} & {h2} & & & \\
+ & 2 & {h3} & {h4} & & & \\
+ & 3+ & {h5} & {h6} & & & \\
+\multirow[t]{{4}}{{*}}{{Household income}} \\ 
+ & 1700-2500 EUR & {i1} & {i2} & & & \\
+ & 2500-4000 EUR & {i3} & {i4} & & & \\
+ & > 4000 EUR & {i5} & {i6} & & &  \\
+ & Prefer not to say & {i7} & {i8} & & & \\
+  \multirow[t]{{1}}{{*}}{{Homeowner}} & & {o1} & {o2} & & & \\
+  \multirow[t]{{1}}{{*}}{{Flood damages in July 2021}} & & {f1} & {f2} & & & \\
+\multirow[t]{{4}}{{*}}{{Return period}} \\ & 1 in 100 years & {r1} & {r2} & {r3} & {r4} & {r5} \\
+ & 1 in 1000 years & {r6} & {r7} & {r8} & {r9} & {r10} \\
+ & 1 in 10000 years & {r11} & {r12} & {r13} & {r14} & {r15} \\
+ \multirow[t]{{4}}{{*}}{{Max. water depth}} \\ 
+ & Less than 0.5m & {w1} & {w2} & {w3} & {w4} & {w5} \\
+ & Between 0.5 and 1m & {w6} & {w7} & {w8} & {w9} & {w10} \\
+ & Between 1 and 1.5m & {w11} & {w12} & {w13} & {w14} & {w15} \\
+ & Between 1.5 and 2m & {w16} & {w17} & {w18} & {w19} & {w20} \\
+ & Between 2 and 5m & {w21} & {w22} & {w23} & {w24} & {w25} \\
+ \multirow[t]{{1}}{{*}}{{Located in July 2021 floodplain}} & & {p1} & {p2} & {p3} & {p4} & {p5} \\
+\bottomrule
+\end{{tabular}}}}
+
+\medskip
+\footnotesize
+\justifying
+\textit{{Notes}}: This table reports the share of individuals belonging to each category. The first and second columns represent survey respondents, the third and fourth survey recipients, the fifth column all individuals in the full sample. The second and fourth column use re-weighted statistics based on sample inclusion probabilities. In the Netherlands there are two types of institutions for higher education, indicated in the table as "university of applied sciences" and "university", respectively. The former have a professional orientation, while the latter have an academic orientation.
+
+\label{{tab:covariates}}
+\end{{table}}

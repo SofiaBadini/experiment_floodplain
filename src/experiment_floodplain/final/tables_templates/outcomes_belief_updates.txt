@@ -1,0 +1,61 @@
+\begin{{table}}[{{ht}}]
+\caption{{Interaction with belief updates}}
+\small
+\centering
+\noindent\adjustbox{{max width=1.05\textwidth}}{{%
+\begin{{tabular}}{{m{{2.75ex}}m{{3cm}}*{{6}}{{cccccc}}}}
+\toprule
+\multicolumn{{2}}{{c}}{{}}
+&
+\multicolumn{{5}}{{c}}{{WTP for insurance}}
+\\
+\cmidrule(lr){{3-7}}
+\multicolumn{{2}}{{M{{1cm}}}}{{}}
+ &
+ \multicolumn{{1}}{{M{{2.15cm}}}}{{(1) Update: 10-year flood prob.}}
+ &
+ \multicolumn{{1}}{{M{{2.15cm}}}}{{(2) Update: Damages}}
+ &
+  \multicolumn{{1}}{{M{{2.1cm}}}}{{(3) Update: Tot comp.}}
+ &
+ \multicolumn{{1}}{{M{{2.15cm}}}}{{(4) Update: Govt. comp.}}
+ &
+ \multicolumn{{1}}{{M{{2cm}}}}{{(5) Update: Worry}}
+ \\
+ \midrule
+\multirow[t]{{9}}{{*}}{{Treatment}} \\
+ & Risk profile & {a1} & {a2} & {a3} & {a4} & {a5} \\
+& & ({sa1}) & ({sa2}) & ({sa3}) & ({sa4}) & ({sa5}) \\
+& & [{pa1}] & [{pa2}] & [{pa3}] & [{pa4}] & [{pa5}] \\
+ & Govt. comp.  & {b1} & {b2} & {b3} & {b4} & {b5} \\
+& & ({sb1}) & ({sb2}) & ({sb3}) & ({sb4}) & ({sb5}) \\
+& & [{pb1}] & [{pb2}] & [{pb3}] & [{pb4}] & [{pb5}] \\
+& Insurance & {c1} & {c2} & {c3} & {c4} & {c5} \\
+& & ({sc1}) & ({sc2}) & ({sc3}) & ({sc4}) & ({sc5}) \\
+& & [{pc1}] & [{pc2}] & [{pc3}] & [{pc4}] & [{pc5}] \\
+ \rule{{0pt}}{{1ex}} \\
+ \multirow[t]{{1}}{{*}}{{Update}} & & {d1} & {d2} & {d3} & {d4} & {d5} \\
+& & ({sd1}) & ({sd2}) & ({sd3}) & ({sd4}) & ({sd5}) \\
+& & [{pd1}] & [{pd2}] & [{pd3}] & [{pd4}] & [{pd5}] \\
+ \multirow[t]{{1}}{{*}}{{Update $\times$ Risk profile}} & & {e1} & {e2} & {e3} & {e4} & {e5} \\
+& & ({se1}) & ({se2}) & ({se3}) & ({se4}) & ({se5}) \\
+& & [{pe1}] & [{pe2}] & [{pe3}] & [{pe4}] & [{pe5}] \\
+ \multirow[t]{{1}}{{*}}{{Update $\times$ Govt. comp.}} & & {f1} & {f2} & {f3} & {f4} & {f5} \\
+& & ({sf1}) & ({sf2}) & ({sf3}) & ({sf4}) & ({sf5}) \\
+& & [{pf1}] & [{pf2}] & [{pf3}] & [{pf4}] & [{pf5}] \\
+\multirow[t]{{1}}{{*}}{{Update $\times$ Insurance}} & & {g1} & {g2} & {g3} & {g4} & {g5} \\
+& & ({sg1}) & ({sg2}) & ({sg3}) & ({sg4}) & ({sg5}) \\
+& & [{pg1}] & [{pg2}] & [{pg3}] & [{pg4}] & [{pg5}] \\
+ \rule{{0pt}}{{1ex}} \\
+ \multirow[t]{{1}}{{*}}{{Controls}} & & x & x & x & x & x \\
+ \multirow[t]{{1}}{{*}}{{Number of obs.}} & & {n1} & {n2} & {n3} & {n4} & {n5} \\
+ \bottomrule
+\end{{tabular}}}}
+
+\medskip
+\footnotesize
+\justifying
+\hspace{{\parindent}} \textit{{Notes}}: This table presents the interaction effect of treatment with belief updates. The WTP for insurance (outcome variable) is winsorized at the 99th percentile. P-values are unadjusted for multiple hypotheses testing. Stars indicate: *** 1 percent ** 5 percent * 10 percent level of significance.
+
+\label{{tab:outcomes-updates}}
+\end{{table}}

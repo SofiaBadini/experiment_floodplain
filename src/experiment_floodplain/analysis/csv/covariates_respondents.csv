@@ -1,0 +1,60 @@
+CATEGORY;DESCRIPTION;VARNAME
+Gender;Female;gender_female
+Gender;Male;gender_male
+Gender;Other;gender_other
+Gender;Prefer not to say;gender_prefer_not_to_say
+Gender;Missing value;gender_missing_value
+Background;Dutch;own_background_yes
+Background;Not Dutch;own_background_no
+Background;Prefer not to say;own_background_prefer_not_to_say
+Background;Missing value;own_background_missing_value
+Born in the municipality;Yes;municipality_yes
+Born in the municipality;No;municipality_no
+Born in the municipality;Don't know;municipality_dont_know
+Born in the municipality;Missing value;municipality_missing_value
+Age;18-24;age_between_18_and_24_years_old
+Age;25-44;age_between_25_and_44_years_old
+Age;45-64;age_between_45_and_64_years_old
+Age;65+;age_older_than_65_years_old
+Age;Prefer not to say;age_prefer_not_to_say
+Age;Missing value;age_missing_value
+Education;WO;education_wo
+Education;HBO;education_hbo
+Education;MBO2/MBO3/MBO4;education_mbo2_or_mbo3_or_mbo4
+Education;MBO1;education_mbo1
+Education;Other;education_none_of_the_above_other
+Education;Missing value;education_missing_value
+Homeowner;Yes;homeownership_yes
+Homeowner;No;homeownership_no
+Homeowner;Prefer not to say;homeownership_prefer_not_to_say
+Homeowner;Missing value;homeownership_missing_value
+Household income;< 1200 EUR;household_income_less_than_1200_eur
+Household income;1200-1700 EUR;household_income_between_1200_and_1700_eur
+Household income;1700-2500 EUR;household_income_between_1700_and_2500_eur
+Household income;2500-4000 EUR;household_income_between_2500_and_4000_eur
+Household income;> 4000 EUR;household_income_more_than_4000_eur
+Household income;Prefer not to say;household_income_prefer_not_to_say
+Household income;Missing value;household_income_missing_value
+Household size;1;household_members_1
+Household size;2;household_members_2
+Household size;3+;household_members_3+
+Household size;Missing value;household_members_missing_value
+Time resident;< 1 year;how_long_residing_less_than_1_year
+Time resident;1-5 years;how_long_residing_between_1_and_5_years
+Time resident;5-10 years;how_long_residing_between_5_and_10_years
+Time resident;10-20 years;how_long_residing_between_10_and_20_years
+Time resident;> 20 years;how_long_residing_more_than_20_years
+Time resident;Missing value;how_long_residing_missing_value
+Flood damages July 2021;Yes;julyflood_damages_yes
+Flood damages July 2021;No;julyflood_damages_no
+Flood damages July 2021;Missing value;julyflood_damages_missing_value
+Maximum water depth;< 0.5m;waterdepth_max_less_than_05m
+Maximum water depth;Between 0.5 and 1m;waterdepth_max_between_05_and_1m
+Maximum water depth;Between 1 and 1.5m;waterdepth_max_between_1_and_15m
+Maximum water depth;Between 1.5 and 2m;waterdepth_max_between_15_and_2m
+Maximum water depth;Between 2 and 5m;waterdepth_max_between_2_and_5m
+Maximum water depth;> 5m;waterdepth_max_more_than_5m
+Flood risk;Return period: 1 in 100 years;flood_max_1_in_100_years
+Flood risk;Return period: 1 in 1000 years;flood_max_1_in_1000_years
+Flood risk;Return period: 1 in 10000 years;flood_max_1_in_10000_years
+Flood risk;In July 2021 floodplain;FLOODED

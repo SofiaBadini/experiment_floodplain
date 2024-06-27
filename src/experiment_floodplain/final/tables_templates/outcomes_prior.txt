@@ -1,0 +1,66 @@
+\begin{{table}}[{{ht}}]
+\caption{{Interaction with prior beliefs}}
+\small
+\centering
+\noindent\adjustbox{{max width=1.05\textwidth}}{{%
+\setlength\extrarowheight{{-3.5pt}}
+\begin{{tabular}}{{m{{2.75ex}}m{{3cm}}*{{6}}{{ccccccc}}}}
+\toprule
+\multicolumn{{2}}{{c}}{{}}
+&
+\multicolumn{{6}}{{c}}{{WTP for insurance}}
+\\
+\cmidrule(lr){{3-8}}
+\multicolumn{{2}}{{M{{1cm}}}}{{}}
+ &
+ \multicolumn{{1}}{{M{{2.15cm}}}}{{(1) Prior: 10-year flood prob. (z-score)}}
+ &
+ \multicolumn{{1}}{{M{{2.15cm}}}}{{(2) Prior: Damages (z-score)}}
+ &
+  \multicolumn{{1}}{{M{{2.1cm}}}}{{(3) Prior: Tot comp. (z-score)}}
+ &
+ \multicolumn{{1}}{{M{{2.15cm}}}}{{(4) Prior: Govt. comp. (z-score)}}
+ &
+ \multicolumn{{1}}{{M{{2cm}}}}{{(5) Prior: All beliefs (z-score)}}
+ &
+ \multicolumn{{1}}{{M{{2.1cm}}}}{{(6) Prior: Worry}}
+ \\
+ \midrule
+\multirow[t]{{9}}{{*}}{{Treatment}} \\
+ & Risk profile & {a1} & {a2} & {a3} & {a4} & {a5} & {a6} \\
+& & ({sa1}) & ({sa2}) & ({sa3}) & ({sa4}) & ({sa5}) & ({sa6}) \\
+& & [{pa1}] & [{pa2}] & [{pa3}] & [{pa4}] & [{pa5}] & [{pa6}] \\
+ & Govt. comp.  & {b1} & {b2} & {b3} & {b4} & {b5} & {b6} \\
+& & ({sb1}) & ({sb2}) & ({sb3}) & ({sb4}) & ({sb5}) & ({sb6}) \\
+& & [{pb1}] & [{pb2}] & [{pb3}] & [{pb4}] & [{pb5}] & [{pb6}] \\
+& Insurance & {c1} & {c2} & {c3} & {c4} & {c5} & {c6} \\
+& & ({sc1}) & ({sc2}) & ({sc3}) & ({sc4}) & ({sc5})  & ({sc6}) \\
+& & [{pc1}] & [{pc2}] & [{pc3}] & [{pc4}] & [{pc5}] & [{pc6}] \\
+ \rule{{0pt}}{{1ex}} \\
+ \multirow[t]{{1}}{{*}}{{Prior}} & & {d1} & {d2} & {d3} & {d4} & {d5} & {d6} \\
+& & ({sd1}) & ({sd2}) & ({sd3}) & ({sd4}) & ({sd5})  & ({sd6}) \\
+& & [{pd1}] & [{pd2}] & [{pd3}] & [{pd4}] & [{pd5}] & [{pd6}] \\
+ \multirow[t]{{1}}{{*}}{{Prior $\times$ Risk profile}} & & {e1} & {e2} & {e3} & {e4} & {e5} & {e6} \\
+& & ({se1}) & ({se2}) & ({se3}) & ({se4}) & ({se5}) & ({se6}) \\
+& & [{pe1}] & [{pe2}] & [{pe3}] & [{pe4}] & [{pe5}]  & [{pe6}] \\
+ \multirow[t]{{1}}{{*}}{{Prior $\times$ Govt. comp.}} & & {f1} & {f2} & {f3} & {f4} & {f5} & {f6} \\
+& & ({sf1}) & ({sf2}) & ({sf3}) & ({sf4}) & ({sf5}) & ({sf6}) \\
+& & [{pf1}] & [{pf2}] & [{pf3}] & [{pf4}] & [{pf5}] & [{pf6}] \\
+\multirow[t]{{1}}{{*}}{{Prior $\times$ Insurance}} & & {g1} & {g2} & {g3} & {g4} & {g5} & {g6} \\
+& & ({sg1}) & ({sg2}) & ({sg3}) & ({sg4}) & ({sg5})  & ({sg6}) \\
+& & [{pg1}] & [{pg2}] & [{pg3}] & [{pg4}] & [{pg5}] & [{pg6}] \\
+ \rule{{0pt}}{{1ex}} \\
+ \multirow[t]{{1}}{{*}}{{Controls}} & & x & x & x & x & x & x \\
+ \multirow[t]{{1}}{{*}}{{Number of obs.}} & & {n1} & {n2} & {n3} & {n4} & {n5} & {n6} \\
+ \bottomrule
+\end{{tabular}}}}
+
+\medskip
+\footnotesize
+\justifying
+\begin{{adjustwidth}}{{0pt}}{{-40pt}}
+\hspace{{\parindent}} \textit{{Notes}}: This table presents the interaction effect of treatment with prior beliefs. The WTP for insurance (outcome variable) is winsorized at the 99th percentile. P-values are unadjusted for multiple hypotheses testing. Stars indicate: *** 1 percent ** 5 percent * 10 percent level of significance.
+\end{{adjustwidth}}
+
+\label{{tab:outcomes-prior}}
+\end{{table}}

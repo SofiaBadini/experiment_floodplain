@@ -1,0 +1,368 @@
+﻿VARIABLE;DESCRIPTION;DERIVED FROM;SURVEY QUESTION;VALUES
+uniqueadd_id;ID unique to each address (i.e., to each survey respondent);;;Alphanumeric code
+flood_max_1_in_100_years;Whether address is in the 1 in 100 years flood category;;;0, 1
+flood_max_1_in_1000_years;Whether address is in the 1 in 1000 years flood category;;;0, 1
+flood_max_1_in_10000_years;Whether address is in the 1 in 10000 years flood category;;;0, 1
+waterdepth_max_less_than_05m;Whether address is in the 0.5m maximum water depth category;;;0, 1
+waterdepth_max_between_05_and_1m;Whether address is in the 0.5m to 1m maximum water depth category;;;0, 1
+waterdepth_max_between_1_and_15m;Whether address is in the 1m to 1.5m maximum water depth category;;;0, 1
+waterdepth_max_between_15_and_2m;Whether address is in the 1.5m to 2m maximum water depth category;;;0, 1
+waterdepth_max_between_2_and_5m;Whether address is in the 2m to 5m maximum water depth category;;;0, 1
+waterdepth_max_more_than_5m;Whether address is in the more than 5m maximum water depth category;;;0, 1
+waterdepth_max_over_2m;Whether address is in the more than 2m maximum water depth category (coarser category for randomization integrity checks);waterdepth_max_less_than_05m, waterdepth_max_between_05_and_1m, waterdepth_max_between_1_and_15m, waterdepth_max_between_15_and_2m, waterdepth_max_between_2_and_5m, waterdepth_max_more_than_5m;;0, 1
+FLOODED;Whether the address is in the July 2021 floodplain;;;0, 1
+dist_floodareas;Distance from (closest) flooded area;;;Non-negative number
+GEMNAME_2022;Gemeente in 2022;;;Gemeente name
+consent;Consent to participate into the survey, in words;;;I do NOT consent to participate in this survey, I consent to participate in this survey
+consent_numeric;Consent to participate into the survey, numeric;consent;;0, 1
+consent_followup;Consent to be contacted for follow-up surveys, in words;;;I do NOT consent to be contacted via email for a follow-up survey, I do consent to be contacted via email for a follow-up survey
+consent_followup_numeric;Consent to be contacted for follow-up surveys, numeric;consent_followup;;0, 1
+StartDate;When the respondents first clicked the survey link;;;Time stamp
+EndDate;When the respondent submitted their survey;;;Time stamp
+Progress;The progress a respondent made in the survey before finishing, in percentage of the total survey questiond;;;Integer between 0 and 100
+duration_seconds;The number of seconds it took the respondent to complete the survey.;;;Non-negative number
+Finished;Whether the response was submitted or closed;;;0, 1 OR FALSE, TRUE
+RecordedDate;When a survey was recorded in Qualtrics;;;Time stamp
+UserLanguage;Respondent's language code;;;EN, NL
+payment;How the survey respondent would be like to receive payment, if selected;;Would you prefer to receive your voucher via email (as a numeric code) or via physical mail? ;Email, Physical mail
+household_members;Total number of household members;;Including yourself, how many people – including children – live here regularly as members of this household? Please enter a number.;1, 2, 3+
+hh_member_residing;Whether there is a household member who has been residing at the address longer than the respondent;;Is there another household member who has been residing at this address longer than you?;yes, no
+hh_member_how_long;Time spent at the address by the household member who has been residing there longer than the respondent (if applicable);;How long has the household member been residing at this address?;Less than 1 year, Between 1 and 5 years, Between 5 and 10 years, Between 10 and 20 years, More than 20 years
+homeownership;Whether the house is owned;;Do you own the house at this address?;yes, no, prefer not to say
+preparedness;Measures against floods implemented by the household;;The measures below may reduce your flood risk or reduce your damages in case of a flood. Please select the measures among these implemented in your house or by your household, if any. You can select multiple options.;EITHER None of the measures above OR Don't know, OR one or more of the following: My household has insurance coverage against floods from extreme rain, My household has insurance coverage against riverine floods, My house is elevated above the street level, My house walls and/or floors are built with water-resistant materials, My house has anti-backflow valves installed on pipes, My house has a pump and/or other systems to drain flood water installed, In my house there are sandbags or other water barriers (e.g. water-proof basement windows), My valuable assets are on higher floors or elevated areas
+preparedness_how_many_measures;Number of measures against floods implemented by the household;preparedness;;Integer between 0 and 8
+preparedness_high;Number of measures against floods implemented by the household is higher than the average number (average and median coincinde and are equal to 1);preparedness_how_many_masure;;0, 1
+house_elevation;By how much the house is elevated;;By how much is your house elevated?;Up to 50 cm above the street level, Between 50 cm and 1 m above the street level, More than 1 m above the street level
+julyflood_damages;Whether the household experienced financial damages during the 2021 floods;;Did you face damages during the floods that hit Limburg in July 2021?;yes, no
+julyflood_comp;Whether the household received compensation after the 2021 floods;;Have the damages been compensated, either by the government or by your insurance company?;Yes, Partially, No and I am not eligible for compensation, Not yet but I am eligible for compensation
+household_income;Household income;;What was your household's monthly net income in 2021?;Less than 1200 EUR, Between 1200 and 1700 EUR, Between 1700 and 2500 EUR, Between 2500 and 4000 EUR, More than 4000 EUR, Prefer not to say, Don't know
+household_members_1;Single-member household;household_members;;0, 1
+household_members_2;Two-members household;household_members;;0, 1
+household_members_3+;Three-members or more household;household_members;;0, 1
+household_members_missing_value;Missing value in household members;household_members;;0, 1
+homeownership_missing_value;Missing value in homeownership;homeownership;;0, 1
+homeownership_prefer_not_to_say;Prefer not to say whether homeowner;homeownership;;0, 1
+homeownership_no;House is not owned;homeownership;;0, 1
+homeownership_yes;House is owned;homeownership;;0, 1
+preparedness_dont_know;Does not know whether measures against flood risk are implemented;preparedness;;0, 1
+preparedness_no_measures;Implemented no measures against flood risk ;preparedness;;0, 1
+preparedness_missing_value;Missing value in preparedness;preparedness;;0, 1
+preparedness_has_insurance_rain;Household has insurance coverage against floods from extreme rain;preparedness;;0, 1
+preparedness_has_insurance_rivers;Household has insurance coverage against riverine floods;preparedness;;0, 1
+preparedness_house_elevated;House is elevated above the street level;preparedness;;0, 1
+preparedness_house_water_resistant;House walls and/or floors are built with water-resistant materials;preparedness;;0, 1
+preparedness_house_has_valves;House has anti-backflow valves installed on pipes;preparedness;;0, 1
+preparedness_house_has_pump;House has a pump and/or other systems to drain flood water installed;preparedness;;0, 1
+preparedness_house_has_sandbags;House has sandbags or other water barriers;preparedness;;0, 1
+preparedness_assets_are_high;Valuable assets are on higher floors or elevated areas;preparedness;;0, 1
+julyflood_damages_missing_value;Missing value julyflood_damages;julyflood_damages;;0, 1
+julyflood_damages_no;Did not experience financial damages during the 2021 floods;julyflood_damages;;0, 1
+julyflood_damages_yes;Did experience financial damages during the 2021 floods;julyflood_damages;;0, 1
+household_income_less_than_1200_eur;Household income is less than 1200 EUR per month;household_income;;0, 1
+household_income_between_1200_and_1700_eur;Household income is between 1200 and 1700 EUR per month;household_income;;0, 1
+household_income_between_1700_and_2500_eur;Household income is between 1700 and 2500 EUR per month;household_income;;0, 1
+household_income_between_2500_and_4000_eur;Household income is between 2500 and 4000 EUR per month;household_income;;0, 1
+household_income_more_than_4000_eur;Household income is over 4000 EUR per month;household_income;;0, 1
+household_income_dont_know;Does not know household income;household_income;;0, 1
+household_income_missing_value;Missing value in household_income;household_income;;0, 1
+household_income_prefer_not_to_say;Prefer not to say household income;household_income;;0, 1
+gender;Gender of survey respondent;;What is your gender?;Female, Male, Other, Prefer not to say
+age;Age of survey respondent;;What is your age?;Between 18 and 24 years old, Between 25 and 44 years old, between 45 and 64 years old, Older than 65 years old
+education;Education of survey respondent;;What is your highest education level?;WO, HBO, MBO-2 or MBO-3 or MBO-4, MBO-1, None of the above/other
+how_long_residing;Time spent at the address by survey respondent;;How long have you been residing at this address?;Less than 1 year, Between 1 and 5 years, Between 5 and 10 years, Between 10 and 20 years, More than 20 years
+how_long_planning;Time the survey respondent plans to spend at the address;;How long do you plan to live at this address?;Less than 1 year, Between 1 and 5 years, Between 5 and 10 years, Between 10 and 20 years, More than 20 years
+municipality;Whether the first residence of the survey respondent was in the same municipality of the address;;As far as you remember, was the first house you ever lived in in this municipality?;yes, no, don't know
+own_background;Whether survey respondent is Dutch;;Were you born in The Netherlands;yes, no, prefer not to say
+agree_transparent;How much survey respondent agrees with statement on flood risk management in The Netherlands ;;"How much do you agree with this statement? ""In The Netherlands, the objectives of water management programs (for example, Room for the River) are communicated in a transparent way."" ";Strongly disagree, Somewhat disagree, Neither agree nor disagree, Somewhat agree, Strongly agree
+source_info;Consulted sources about flood risk;;Do you ever consult sources to learn about flood risk in The Netherlands? If yes, which of the options below? You can select multiple options.;EITHER I don't consult any source OR one or more of the following: Government websites, Other websites, My insurance company, Neighbours or friends, Other 
+source_info_how_many;Number of sources consulted about flood risk;source_info;;Integer between 0 and 5
+gender_female;Survey respondent is female;gender;;0, 1
+gender_male;Survey respondent is male;gender;;0, 1
+gender_missing_value;Missing value in gender;gender;;0, 1
+gender_other;Survey respondent's gender is other;gender;;0, 1
+gender_prefer_not_to_say;Survey respondent prefers not to say gender;gender;;0, 1
+age_between_18_and_24_years_old;Survey respondent is between 18 and 24 years old;age;;0, 1
+age_between_25_and_44_years_old;Survey respondent is between 25 and 44 years old;age;;0, 1
+age_between_45_and_64_years_old;Survey respondent is between 45 and 64 years old;age;;0, 1
+age_older_than_65_years_old;Survey respondent is 65 years old or older;age;;0, 1
+age_missing_value;Missing value in age;age;;0, 1
+age_prefer_not_to_say;Survey respondent prefers not to say age;age;;0, 1
+education_hbo;Education is HBO;education;;0, 1
+education_mbo1;Education is MBO2;education;;0, 1
+education_mbo2_or_mbo3_or_mbo4;Education is MBO2 or MBO3 or MBO4;education;;0, 1
+education_wo;Education is WO;education;;0, 1
+education_none_of_the_above_other;Education is other;education;;0, 1
+education_missing_value;Missing value in education;education;;0, 1
+how_long_residing_less_than_1_year;Residing at the address for less than 1 year;how_long_residing;;0, 1
+how_long_residing_between_1_and_5_years;Residing at the address for between 1 and 5 years;how_long_residing;;0, 1
+how_long_residing_between_10_and_20_years;Residing at the address for between 10 and 20 years;how_long_residing;;0, 1
+how_long_residing_between_5_and_10_years;Residing at the address for between 5 and 10 years;how_long_residing;;0, 1
+how_long_residing_more_than_20_years;Residing at the address for more than 20 years;how_long_residing;;0, 1
+how_long_residing_missing_value;Missing value in how long residing at the address;how_long_residing;;0, 1
+municipality_no;First address ever not in the same municipality;municipality;;0, 1
+municipality_yes;First address ever in the same municipality;municipality;;0, 1
+municipality_dont_know;Doesn't know if first address ever in the same municipality;municipality;;0, 1
+municipality_missing_value;Missing value in municipality;municipality;;0, 1
+own_background_missing_value;Missing value in whether born in The Netherlands;own_background;;0, 1
+own_background_no;Not born in The Netherlands;own_background;;0, 1
+own_background_yes;Born in The Netherlands;own_background;;0, 1
+own_background_prefer_not_to_say;Prefer not to say if born in The Netherlands;own_background;;0, 1
+source_info_none;No source about flood risk consulted;source_info;;0, 1
+source_info_missing_value;Missing value in consulted sources about flood risk;source_info;;0, 1
+source_info_gov;Consult government websites  about flood risk;source_info;;0, 1
+source_info_web;Consult other websites about flood risk;source_info;;0, 1
+source_info_ins;Consult insurance company about flood risk;source_info;;0, 1
+source_info_friends;Consult friends or neighbours about flood risk;source_info;;0, 1
+source_info_other;Consult other sources about flood risk;source_info;;0, 1
+time_residing_m10;Residing at the address for more than 10 years;how_long_residing;;0, 1
+time_planning_m10;Planning to reside at the address for more than 10 years;how_long_planning;;0, 1
+age_younger_than_45;Younger than 45 years old;age;;0, 1
+household_income_min2500;Household income lower than 2500 EUR per month;household_income;;0, 1
+household_income_m2500;Household income higher than 2500 EUR per month;household_income;;0, 1
+edu_hbo_or_higher;Education HBO or WO;education;;0, 1
+worry;Worry that house will be flooded, in words (before experiment);;How worried are you about your house being flooded?;Not worried at all, Not so worried, Somewhat worried, Very worried, Extremely worried
+worry_numeric;Worry that house will be flooded, numeric (before experiment);worry;;Integer between 1 and 5
+risk;Subjective probability that house will be flooded at least one in the next 10 years (before experiment);;What do you think is the probability that your house will be flooded at least once in the next 10 years? Please type a number between 0 (no flood will happen) and 100 (at least one flood will certainly happen). You can use a dot to indicate decimals.;Number between 0 and 100
+damages;Subjective damages expected in case of a flood, in EUR (before experiment);;Imagine your house were flooded. How much damage would you expect (in EUR)?;Integer greater than 0
+damages_wins975;Subjective damages expected in case of a flood, in EUR, winsorized at the 97.5 percentile (before experiment);damages;;Integer greater than 0
+damages_wins99;Subjective damages expected in case of a flood, in EUR, winsorized at the 99 percentile (before experiment);damages;;Integer greater than 0
+damages_1000;Subjective damages expected in case of a flood, in kEUR (before experiment);damages;;Integer greater than 0
+damages_wins975_1000;Subjective damages expected in case of a flood, in kEUR, winsorized at the 97.5 percentile (before experiment);damages;;Integer greater than 0
+damages_wins99_1000;Subjective damages expected in case of a flood, in kEUR, winsorized at the 99 percentile (before experiment);damages;;Integer greater than 0
+comptot;Subjective share of compensated damages in case of a flood (before experiment);;"What do you think is the percentage of damages that would be compensated, either by your insurer or by the government? 0 means ""I expect I would have to pay for all the damages myself"". 100 means ""I expect I would be fully compensated"".";Integer between 0 and 100
+compshare;Subjective share of damages compensated by the government in case of a flood, as share of total compensation (before experiment);;"Of the damages you think would be compensated, which percentage do you think would be paid by the government? 0 means ""I expect that all compensation would be paid by my insurance company"". 100 means ""I expect that all compensation would be paid by the government"".";Integer between 0 and 100
+risk_conf;Confidence in subjective probability that house will be flood at least one in the next 10 years (before experiment);;"How confident are you in your answer, from 1 (""Very unsure"") to 10 (""Very sure"")?";Integer between 1 and 10
+damages_conf;Confidence in subjective damages expected in case of a flood (before experiment);;"How confident are you in your answer, from 1 (""Very unsure"") to 10 (""Very sure"")?";Integer between 1 and 10
+comptot_conf;Confidence in subjective share of compensated damages in case of a flood (before experiment);;"How confident are you in your answer, from 1 (""Very unsure"") to 10 (""Very sure"")?";Integer between 1 and 10
+compshare_conf;Confidence in subjective share of damages compensated by the government in case of a flood (before experiment);;"How confident are you in your answer, from 1 (""Very unsure"") to 10 (""Very sure"")?";Integer between 1 and 10
+average_beliefs_confidence;Average confidence in subjective beliefs;risk, damages, comptot, compshare;;Integer between 1 and 10
+worry_RE;Worry that house will be flooded, in words (after experiment);;How worried are you about your house being flooded?;Not worried at all, Not so worried, Somewhat worried, Very worried, Extremely worried
+worry_RE_numeric;Worry that house will be flooded, numeric (after experiment);worry_RE;;Integer between 1 and 5
+risk_RE;Subjective probability that house will be flooded at least one in the next 10 years (after experiment);;What do you think is the probability that your house will be flooded at least once in the next 10 years? Please type a number between 0 (no flood will happen) and 100 (at least one flood will certainly happen). You can use a dot to indicate decimals.;Number between 0 and 100
+damages_RE;Subjective damages expected in case of a flood, in EUR (after experiment);;Imagine your house were flooded. How much damage would you expect (in EUR)?;Integer greater than 0
+damages_RE_wins975;Subjective damages expected in case of a flood, in EUR, winsorized at the 97.5 percentile (after experiment);damages_RE;;Integer greater than 0
+damages_RE_wins99;Subjective damages expected in case of a flood, in EUR, winsorized at the 99 percentile (after experiment);damages_RE;;Integer greater than 0
+damages_RE_1000;Subjective damages expected in case of a flood, in kEUR (after experiment);damages_RE;;Integer greater than 0
+damages_RE_wins975_1000;Subjective damages expected in case of a flood, in kEUR, winsorized at the 97.5 percentile (after experiment);damages_RE;;Integer greater than 0
+damages_RE_wins99_1000;Subjective damages expected in case of a flood, in kEUR, winsorized at the 99 percentile (after experiment);damages_RE;;Integer greater than 0
+comptot_RE;Subjective share of compensated damages in case of a flood (after experiment);;"What do you think is the percentage of damages that would be compensated, either by your insurer or by the government? 0 means ""I expect I would have to pay for all the damages myself"". 100 means ""I expect I would be fully compensated"".";Integer between 0 and 100
+compshare_RE;Subjective share of damages compensated by the government in case of a flood, as share of total compensation (after experiment);;"Of the damages you think would be compensated, which percentage do you think would be paid by the government? 0 means ""I expect that all compensation would be paid by my insurance company"". 100 means ""I expect that all compensation would be paid by the government"".";Integer between 0 and 100
+risk_conf_RE;Confidence in subjective probability that house will be flood at least one in the next 10 years (after experiment);;"How confident are you in your answer, from 1 (""Very unsure"") to 10 (""Very sure"")?";Integer between 1 and 10
+damages_conf_RE;Confidence in subjective damages expected in case of a flood (after experiment);;"How confident are you in your answer, from 1 (""Very unsure"") to 10 (""Very sure"")?";Integer between 1 and 10
+comptot_conf_RE;Confidence in subjective share of compensated damages in case of a flood (after experiment);;"How confident are you in your answer, from 1 (""Very unsure"") to 10 (""Very sure"")?";Integer between 1 and 10
+compshare_conf_RE;Confidence in subjective share of damages compensated by the government in case of a flood (after experiment);;"How confident are you in your answer, from 1 (""Very unsure"") to 10 (""Very sure"")?";Integer between 1 and 10
+risk_update;Update in subjective probability that house will be flooded at least one in the next 10 years;risk, risk_RE;;Integer between -100 and 100
+damages_update;Update in subjective damages expected in case of a flood, in EUR;damages, damages_RE;;Any number
+damages_wins99_update;Update in subjective damages expected in case of a flood, in EUR, winsorized at the 99 percentile;damages_wins99, damages_RE_wins99;;Any number
+damages_wins975_update;Update in subjective damages expected in case of a flood, in EUR, winsorized at the 97.5 percentile;damages_wins975, damages_RE_wins975;;Any number
+damages_1000_update;Update in subjective damages expected in case of a flood, in kEUR;damages_1000, damages_RE_1000;;Any number
+damages_wins99_1000_update;Update in subjective damages expected in case of a flood, in kEUR, winsorized at the 99 percentile;damages_wins99_1000, damages_RE_wins99_1000;;Any number
+damages_wins975_1000_update;Update in subjective damages expected in case of a flood, in kEUR, winsorized at the 97.5 percentile;damages_wins975_1000, damages_RE_wins975_1000;;Any number
+comptot_update;Update in subjective share of compensated damages in case of a flood;comptot, comptot_RE;;Integer between -100 and 100
+compshare_update;Update in subjective share of damages compensated by the government in case of a flood, as share of total compensation ;compshare, compshare_RE;;Integer between -100 and 100
+worry_numeric_update;Update in worry;worry_numeric, worry_RE_numeric;;Integer between 0 and 4
+risk_update_any;Whether there is an update in belief about risk;risk_update;;0, 1
+damages_update_any;Whether there is an update in belief about damages;damages_update;;0, 1
+comptot_update_any;Whether there is an update in belief about total compensation;comptot_update;;0, 1
+compshare_update_any;Whether there is an update in belief about government compensation;compshare_update;;0, 1
+worry_numeric_update_any;Whether there is an update in worry measure;worry_numeric_update;;0, 1
+risk_revise;Direction in which the belief about risk was revised;risk_update;;upward, downward, none
+damages_revise;Direction in which the belief about damages was revised;damages_update;;upward, downward, none
+comptot_revise;Direction in which the belief about total compensation was revised;comptot_update;;upward, downward, none
+compshare_revise;Direction in which the belief about government compensation was revised;compshare_update;;upward, downward, none
+worry_numeric_revise;Direction in which the worry measure was revised;worry_numeric_update;;upward, downward, none
+risk_quartile;Quartile of subjective probability that house will be flooded at least one in the next 10 years (before experiment);risk;;q1, q2, q3, q4
+damages_quartile;Quartile of subjective damages expected in case of a flood, in EUR (before experiment);damages;;q1, q2, q3, q4
+damages_wins99_quartile;Quartile of subjective damages expected in case of a flood, in EUR, winsorized at the 99 percentile (before experiment);damages_wins99;;q1, q2, q3, q4
+damages_wins975_quartile;Quartile of subjective damages expected in case of a flood, in EUR, winsorized at the 97.5 percentile (before experiment);damages_wins975;;q1, q2, q3, q4
+damages_1000_quartile;Quartile of subjective damages expected in case of a flood, in kEUR (before experiment);damages_1000;;q1, q2, q3, q4
+damages_wins99_1000_quartile;Quartile of subjective damages expected in case of a flood, in kEUR, winsorized at the 99 percentile (before experiment);damages_wins99;;q1, q2, q3, q4
+damages_wins975_1000_quartile;Quartile of subjective damages expected in case of a flood, in kEUR, winsorized at the 97.5 percentile (before experiment);damages_wins975;;q1, q2, q3, q4
+comptot_quartile;Quartile of subjective share of compensated damages in case of a flood (before experiment);comptot;;q1, q2, q3, q4
+compshare_quartile;Quartile of subjective share of damages compensated by the government in case of a flood, as share of total compensation (before experiment);compshar;;q1, q2, q3, q4
+risk_tercile;Tercile of subjective probability that house will be flooded at least one in the next 10 years (before experiment);risk;;t1, t2, t3
+damages_tercile;Tercile of subjective damages expected in case of a flood, in EUR (before experiment);damages;;t1, t2, t3
+damages_wins99_tercile;Tercile of subjective damages expected in case of a flood, in EUR, winsorized at the 99 percentile (before experiment);damages_wins99;;t1, t2, t3
+damages_wins975_tercile;Tercile of subjective damages expected in case of a flood, in EUR, winsorized at the 97.5 percentile (before experiment);damages_wins975;;t1, t2, t3
+damages_1000_tercile;Tercile of subjective damages expected in case of a flood, in kEUR (before experiment);damages_1000;;t1, t2, t3
+damages_wins99_1000_tercile;Tercile of subjective damages expected in case of a flood, in kEUR, winsorized at the 99 percentile (before experiment);damages_wins99;;t1, t2, t3
+damages_wins975_1000_tercile;Tercile of subjective damages expected in case of a flood, in kEUR, winsorized at the 97.5 percentile (before experiment);damages_wins975;;t1, t2, t3
+comptot_tercile;Tercile of subjective share of compensated damages in case of a flood (before experiment);comptot;;t1, t2, t3
+compshare_tercile;Tercile of subjective share of damages compensated by the government in case of a flood, as share of total compensation (before experiment);compshar;;t1, t2, t3
+risk_standardized;Standardized subjective probability that house will be flooded at least one in the next 10 years (before experiment);risk;;Any number
+damages_standardized;Standardized subjective damages expected in case of a flood, in EUR (before experiment);damages;;Any number
+damages_wins99_standardized;Standardized subjective damages expected in case of a flood, in EUR, winsorized at the 99 percentile (before experiment);damages_wins99;;Any number
+damages_wins975_standardized;Standardized subjective damages expected in case of a flood, in EUR, winsorized at the 97.5 percentile (before experiment);damages_wins975;;Any number
+damages_1000_standardized;Standardized subjective damages expected in case of a flood, in kEUR (before experiment);damages_1000;;Any number
+damages_wins99_1000_standardized;Standardized subjective damages expected in case of a flood, in kEUR, winsorized at the 99 percentile (before experiment);damages_wins99_1000;;Any number
+damages_wins975_1000_standardized;Standardized subjective damages expected in case of a flood, in kEUR, winsorized at the 97.5 percentile (before experiment);damages_wins975_1000;;Any number
+comptot_standardized;Standardized subjective share of compensated damages in case of a flood (before experiment);comptot;;Any number
+compshare_standardized;Standardized subjective share of damages compensated by the government in case of a flood, as share of total compensation (before experiment);compshare;;Any number
+prior_beliefs_zscore;Z-score of prior beliefs, where standardized beliefs (i.e. the z-scores) increase with expected net damages, i.e. the higher the beliefs risk and damages and the lowest the beliefs about compensation, the higher the average z-score;risk_standardized, damages_1000_standardized, comptot_standardized, compshare_standardized;;Any number
+prior_beliefs_zscore_quartile;Quartile of z-score of prior beliefs;prior_beliefs_zscore;;q1, q2, q3, q4
+risk_should_revise;Direction in which the belief about risk should have been revised, according to baseline information frictions;friction_floodmaps;;upward, downward, none
+risk_revise_expected;Whether the belief about risk was revised correctly, according to baseline information frictions;risk_update, risk_should_revise;;0, 1
+damages_should_revise;Direction in which the belief about damages should have been revised, according to baseline information frictions;friction_waterdepth;;upward, downward, none
+damages_revise_expected;Whether the belief about damages was revised correctly, according to baseline information frictions;damages_update, damages_should_revise;;0, 1
+compshare_should_revise;Whether the belief about government compensation should have been revised downward, according to baseline information frictions;compshare_update, friction_WTS_indicator, friction_WTScomp_indicator;;
+compshare_revise_expected;Whether the belief about government compensation was revised correctly, according to baseline information frictions;compshare_update, compshare_should_revise;;
+correct_floodmaps;Flood risk category according to Risicokaart flood maps, in words;;;Medium probability (1 flood every 100 years), Small probability (1 flood every 1000 years), Extremely small probability (1 flood every 10,000 years)
+correct_floodmaps_numeric;Flood risk category according to Risicokaart flood maps, numeric;correct_floodmaps;;Integer between 1 and 3
+correct_waterdepth;Maximum water depth category according to Risicokaart flood maps, in words;;;less than 0.5m, between 0.5 and 1m, between 1 and 1.5m, between 1.5 and 2m, between 2 and 5m, more than 5m
+correct_waterdepth_numeric;Maximum water depth category according to Risicokaart flood maps, numeric;correct_waterdepth;;Integer between 1 and 6
+restoration;Subjective coverage of Grensmaas restoration project;;"The ""Grensmaas"" project is the largest river project in progress in the Netherlands. How many kilometers of the Maas river does this project cover?";About 10 km, About 20 km, About 30 km, About 40 km, About 50 km 
+stated_floodmaps;Subective flood category according to maps, in words;;According to official flood maps, what is the maximum flood risk that applies to your address?;Large probability (1 flood every 10 years), Medium probability (1 flood every 100 years), Small probability (1 flood every 1000 years), Extremely small probability (1 flood every 10,000 years), No flood risk
+stated_floodmaps_numeric;Subective flood category according to maps, numeric;stated_floodmaps;;Integer between 0 and 4
+stated_waterdepth;Subjective water depth category according to flood maps, in words;;According to official flood maps, what is the maximum water depth your house would be exposed to in case of a flood?;0 cm, Up to 50 cm, Between 50 cm and 1 m, Between 1 and 1.5 m, Between 1.5 and 2 m, Between 2 and 5 m, More than 5 m
+stated_waterdepth_numeric;Subjective water depth category according to flood maps, numeric;stated_waterdepth;;Integer between 0 and 6
+WTS;Subjective understanding of whether WTS is automatically triggered, in words;;WTS After the floods in July 2021, the government invoked the Wet Tegemoetkoming Schade bij rampen en zware ongevallen (WTS) act. Is the WTS automatically triggered after any flood event?;yes, no
+WTS_numeric;Subjective understanding of whether WTS is automatically triggered, numeric;WTS;;0, 1
+WTScomp;Subjective understanding of whether WTS ensures damage compensation, in words;;When the WTS is invoked, does it mean that all flood-related damages will be compensated by the government?;yes, no
+WTScomp_numeric;Subjective understanding of whether WTS ensures damage compensation, numeric;WTScomp;;0, 1
+claims;Subjective claims compensated by the government after the 2021 floods;;Which percentage of damage claims filed because of the July 2021 floods do you think has been paid out by the government by now, from 0% (none of the claims) to 100% (all of the claims)?;Integer between 0 and 100
+ins_rain;Subjective insurance availability for floods from extreme rain, in words;;Are flood damages due to excessive rain insurable in The Netherlands?;Never, or almost never, By some insurers, Always, or almost always
+ins_rain_numeric;Subjective insurance availability for floods from extreme rain, numeric;ins_rain;;Integer between 0 and 2
+ins_primary;Subjective insurance availability for floods from failure of primary defenses, in words;;Are flood damages due to the breach of primary defences insurable in The Netherlands? Primary defences protect The Netherlands against flooding from the North Sea and major rivers (like the Rhine or the Maas).;Never, or almost never, By some insurers, Always, or almost always
+ins_primary_numeric;Subjective insurance availability for floods from failure of primary defenses, numeric;ins_primary;;Integer between 0 and 2
+ins_secondary;Subjective insurance availability for floods from failure of secondary defenses, in words;;Are flood damages due to the breach of secondary defences insurable in The Netherlands? Secondary defences protect The Netherlands against flooding from smaller rivers.;Never, or almost never, By some insurers, Always, or almost always
+ins_secondary_numeric;Subjective insurance availability for floods from failure of secondary defenses, numeric;ins_secondary;;Integer between 0 and 2
+restoration_conf;Confidence in subjective coverage of Grensmaas restoration project;;"How confident are you in your answer, from 1 (""Very unsure"") to 10 (""Very sure"")?";Integer between 1 and 10
+floodmaps_conf;Confidence in subective flood category according to maps;;"How confident are you in your answer, from 1 (""Very unsure"") to 10 (""Very sure"")?";Integer between 1 and 10
+waterdepth_conf;Confidence in subjective water depth category according to flood maps;;"How confident are you in your answer, from 1 (""Very unsure"") to 10 (""Very sure"")?";Integer between 1 and 10
+WTS_conf;Confidence in subjective understanding of whether WTS is automatically triggered;;"How confident are you in your answer, from 1 (""Very unsure"") to 10 (""Very sure"")?";Integer between 1 and 10
+WTScomp_conf;Confidence in subjective understanding of whether WTS ensures damage compensation;;"How confident are you in your answer, from 1 (""Very unsure"") to 10 (""Very sure"")?";Integer between 1 and 10
+claims_conf;Confidence in subjective claims compensated by the government after the 2021 floods;;"How confident are you in your answer, from 1 (""Very unsure"") to 10 (""Very sure"")?";Integer between 1 and 10
+ins_rain_conf;Confidence in subjective insurance availability for floods from extreme rain ;;"How confident are you in your answer, from 1 (""Very unsure"") to 10 (""Very sure"")?";Integer between 1 and 10
+ins_primary_conf;Confidence in subjective insurance availability for floods from failure of primary defenses;;"How confident are you in your answer, from 1 (""Very unsure"") to 10 (""Very sure"")?";Integer between 1 and 10
+ins_secondary_conf;Confidence in subjective insurance availability for floods from failure of secondary defenses;;"How confident are you in your answer, from 1 (""Very unsure"") to 10 (""Very sure"")?";Integer between 1 and 10
+average_info_confidence;Average confidence across answers to flood-related information-based questions;floodmaps_conf, waterdepth_conf, WTS_conf, WTScomp_conf, claims_conf, ins_rain_conf, ins_primary_conf, ins_secondary_conf;;Integer between 1 and 10
+friction_floodmaps;Number of categories by which flood risk category is overestimated or underestimated;stated_floodmaps, correct_floodmaps;;Integer between -3 and 3
+friction_floodmaps_indicator;Whether flood risk category is overestimated/underestimated;stated_floodmaps, correct_floodmaps;;0, 1
+friction_waterdepth;Number of categories by which water depth category is overestimated or underestimated;stated_waterdepth, correct_waterdepth;;Integer between -6 and 6
+friction_waterdepth_indicator;Whether water depth category is overestimated/underestimated;stated_waterdepth, correct_waterdepth;;0, 1
+friction_WTS_indicator;Whether rules on triggering of WTS are misunderstood;WTS;;0, 1
+friction_WTScomp_indicator;Whether rules on WTS compensation are misunderstood;WTScomp;;0, 1
+friction_claims_difference;Difference between stated claims paid out by the government after the 2021 floods and effective claims;claims;;Integer between -53 and 47
+friction_claims;Whether claims paid out by the government after the 2021 floods are overestimated, underestimated, or reported correctly (correctly means within 10 pp. from the true value, which is 53);claims;;overestimate, underestimate, about right
+friction_claims_indicator;Whether claims paid out by the government after the 2021 floods are overestimated/underestimated or reported correctly (correctly means within 10 pp. from the true value, which is 53);claims;;0, 1
+friction_ins_rain;Number of categories by which insurance availability in case of floods from excessive rain is overestimated/underestimated;ins_rain;;Integer between 0 and 2
+friction_ins_rain_indicator;Whether insurance availability in case of floods from excessive rain is overestimated/underestimated;ins_rain;;0, 1
+friction_ins_primary;Number of categories by which insurance availability in case of floods from failure of primary defences is overestimated/underestimated;ins_primary;;Integer between 0 and 2
+friction_ins_primary_indicator;Whether insurance availability in case of floods from failure of primary defences is overestimated/underestimated;ins_primary;;0, 1
+friction_ins_secondary;Number of categories by which insurance availability in case of floods from failure of secondary defences is overestimated/underestimated;ins_secondary;;Integer between 0 and 2
+friction_ins_secondary_indicator;Whether insurance availability in case of floods from failure of secondary defences is overestimated/underestimated;ins_secondary;;0, 1
+friction_topic_wts;Whether at least one answer to the information-based questions on compensation is incorrect;WTS, WTScomp, claims;;0, 1
+friction_topic_maps;Whether at least one answer to the information-based questions on flood maps categories is incorrect;floodmaps, waterdepth;;0, 1
+friction_topic_insurance;Whether at least one answer to the information-based questions on insurance is incorrect;ins_rain, ins_primary, ins_secondary;;0, 1
+total_frictions;Total number of wrong answers to information-based questions;friction_floodmaps_indicator, friction_waterdepth_indicator, friction_WTS_indicator, friction_WTScomp_indicator, friction_claims_indicator, friction_ins_rain_indicator, friction_ins_primary_indicator, friction_ins_secondary_indicator;;Integer between 0 and 8
+confidently_wrong_floodmaps;Whether the answer to the flood risk category question is incorrect and its associated confidence is 8 or higher;friction_floodmpa_indicator, floodmaps_conf;;0, 1
+confidently_wrong_waterdepth;Whether the answer to the maximum water depth category question is incorrect and its associated confidence is 8 or higher;friction_waterdepth_indicator, waterdepth_conf;;0, 1
+confidently_wrong_WTS;Whether the answer to the triggering of the WTS is incorrect and its associated confidence is 8 or higher;friction_WTS_indicator, WTS_conf;;0, 1
+confidently_wrong_WTScomp;Whether the answer to the WTS compensation question is incorrect and its associated confidence is 8 or higher;friction_WTScomp_indicator, WTScomp_conf;;0, 1
+confidently_wrong_claims;Whether the answer to the claims question is incorrect and its associated confidence is 8 or higher;friction_claims_indicator, claims_conf;;0, 1
+confidently_wrong_ins_primary;Whether the answer to the question on flood insurance from primary defences is incorrect and its associated confidence is 8 or higher;friction_ins_primary_indicator, ins_primary_conf;;0, 1
+confidently_wrong_ins_secondary;Whether the answer to the question on flood insurance from secondary defences is incorrect and its associated confidence is 8 or higher;friction_ins_secondary_indicator, ins_secondary_conf;;0, 1
+confidently_wrong_ins_rain;Whether the answer to the question on flood insurance from extreme rain is incorrect and its associated confidence is 8 or higher;friction_ins_rain_indicator, ins_rain_conf;;0, 1
+confidently_wrong_answers;Number of questions to which the participant gave confidently wrong answers;confidently_wrong_floodmaps, confidently_wrong_waterdepth, confidently_wrong_WTS, confidently_wrong_WTScomp, confidently_wrong_claims, confidently_wrong_ins_primary, confidently_wrong_ins_secondary, confidently_wrong_ins_rain;;Integer between 0 and 7 (only flood-related questions are considered)
+confidently_wrong_indicator;Whether the participant has been confidently wrong at least in one answer;confidently_wrong_answers;;0, 1
+info_value_maps;Value of information on flood maps;;"If the Dutch government were to provide information to you, how valuable would you find these pieces of information, from 1 (""Not valuable at all"") to 5 (""Very valuable"")?";Number between 1 and 5
+info_value_compensation;Value of information on government compensation;;"If the Dutch government were to provide information to you, how valuable would you find these pieces of information, from 1 (""Not valuable at all"") to 5 (""Very valuable"")?";Number between 1 and 5
+info_value_insurance;Value of information on insurance;;"If the Dutch government were to provide information to you, how valuable would you find these pieces of information, from 1 (""Not valuable at all"") to 5 (""Very valuable"")?";Number between 1 and 5
+info_value_nature;Value of information on water management and nature conservation;;"If the Dutch government were to provide information to you, how valuable would you find these pieces of information, from 1 (""Not valuable at all"") to 5 (""Very valuable"")?";Number between 1 and 5
+wtp_scenario;Scenario drawn in incentivized willingness-to-pay for information lottery (among the 11 scenarios);;;Number between 1 and 6 in 0.5 increment 
+wtp_answer;Survey respondent's answer for the scenario drawn in incentivized willingness-to-pay for information lottery (among the 11 answers to 11 scenarios);;;I want to receive the money, I want to receive the information
+wtp_insurance;Stated willingness-to-pay for hypothetcal insurance contract;;Imagine there was an insurance policy that completely covered flood damages to your house and home contents. How much would your household be willing to pay for a monthly premium (in EUR)? You can type 0 as an answer.;Non-negative integer
+wtp_insurance_wins975;Stated willingness-to-pay for hypothetcal insurance contract, winsorized at the 97.5th percentile;wtp_insurance;;Non-negative integer
+wtp_insurance_wins99;Stated willingness-to-pay for hypothetcal insurance contract, winsorized at the 99th percentile;wtp_insurance;;Non-negative integer
+wtp_info;Willigness-to-pay for information;get_info_1EUR, get_info_1.5EUR, get_info_2EUR, get_info_2.5EUR, get_info_3EUR, get_info_3.5EUR, get_info_4EUR, get_info_4.5EUR, get_info_5EUR, get_info_5.5EUR, get_info_6EUR;;0 or -99 (representing malformed willingness-to-pay) or number between 1 and 6 in 0.5 increment
+get_info_1EUR;Would like to receive information for 1 EUR;;If you want, we can share with you information on which Dutch insurance companies have extended coverage for flood damages. We want to understand how valuable this information is for Dutch households. Remember that you may receive money for filling out this survey. You can choose between receiving this piece of information or receiving more money in case you are selected for payment. For each amount of money below, please choose whether you would prefer the piece of information or more money. Of all the choices, only one will be selected at random and your decision for that amount will be implemented.;0, 1
+get_info_1.5EUR;Would like to receive information for 1.5 EUR; ;If you want, we can share with you information on which Dutch insurance companies have extended coverage for flood damages. We want to understand how valuable this information is for Dutch households. Remember that you may receive money for filling out this survey. You can choose between receiving this piece of information or receiving more money in case you are selected for payment. For each amount of money below, please choose whether you would prefer the piece of information or more money. Of all the choices, only one will be selected at random and your decision for that amount will be implemented.;0, 1
+get_info_2EUR;Would like to receive information for 2 EUR;;If you want, we can share with you information on which Dutch insurance companies have extended coverage for flood damages. We want to understand how valuable this information is for Dutch households. Remember that you may receive money for filling out this survey. You can choose between receiving this piece of information or receiving more money in case you are selected for payment. For each amount of money below, please choose whether you would prefer the piece of information or more money. Of all the choices, only one will be selected at random and your decision for that amount will be implemented.;0, 1
+get_info_2.5EUR;Would like to receive information for 2.5 EUR;;If you want, we can share with you information on which Dutch insurance companies have extended coverage for flood damages. We want to understand how valuable this information is for Dutch households. Remember that you may receive money for filling out this survey. You can choose between receiving this piece of information or receiving more money in case you are selected for payment. For each amount of money below, please choose whether you would prefer the piece of information or more money. Of all the choices, only one will be selected at random and your decision for that amount will be implemented.;0, 1
+get_info_3EUR;Would like to receive information for 3 EUR;;If you want, we can share with you information on which Dutch insurance companies have extended coverage for flood damages. We want to understand how valuable this information is for Dutch households. Remember that you may receive money for filling out this survey. You can choose between receiving this piece of information or receiving more money in case you are selected for payment. For each amount of money below, please choose whether you would prefer the piece of information or more money. Of all the choices, only one will be selected at random and your decision for that amount will be implemented.;0, 1
+get_info_3.5EUR;Would like to receive information for 3.5 EUR;;If you want, we can share with you information on which Dutch insurance companies have extended coverage for flood damages. We want to understand how valuable this information is for Dutch households. Remember that you may receive money for filling out this survey. You can choose between receiving this piece of information or receiving more money in case you are selected for payment. For each amount of money below, please choose whether you would prefer the piece of information or more money. Of all the choices, only one will be selected at random and your decision for that amount will be implemented.;0, 1
+get_info_4EUR;Would like to receive information for 4 EUR;;If you want, we can share with you information on which Dutch insurance companies have extended coverage for flood damages. We want to understand how valuable this information is for Dutch households. Remember that you may receive money for filling out this survey. You can choose between receiving this piece of information or receiving more money in case you are selected for payment. For each amount of money below, please choose whether you would prefer the piece of information or more money. Of all the choices, only one will be selected at random and your decision for that amount will be implemented.;0, 1
+get_info_4.5EUR;Would like to receive information for 4.5 EUR;;If you want, we can share with you information on which Dutch insurance companies have extended coverage for flood damages. We want to understand how valuable this information is for Dutch households. Remember that you may receive money for filling out this survey. You can choose between receiving this piece of information or receiving more money in case you are selected for payment. For each amount of money below, please choose whether you would prefer the piece of information or more money. Of all the choices, only one will be selected at random and your decision for that amount will be implemented.;0, 1
+get_info_5EUR;Would like to receive information for 5 EUR;;If you want, we can share with you information on which Dutch insurance companies have extended coverage for flood damages. We want to understand how valuable this information is for Dutch households. Remember that you may receive money for filling out this survey. You can choose between receiving this piece of information or receiving more money in case you are selected for payment. For each amount of money below, please choose whether you would prefer the piece of information or more money. Of all the choices, only one will be selected at random and your decision for that amount will be implemented.;0, 1
+get_info_5.5EUR;Would like to receive information for 5.5 EUR;;If you want, we can share with you information on which Dutch insurance companies have extended coverage for flood damages. We want to understand how valuable this information is for Dutch households. Remember that you may receive money for filling out this survey. You can choose between receiving this piece of information or receiving more money in case you are selected for payment. For each amount of money below, please choose whether you would prefer the piece of information or more money. Of all the choices, only one will be selected at random and your decision for that amount will be implemented.;0, 1
+get_info_6EUR;Would like to receive information for 6 EUR;;If you want, we can share with you information on which Dutch insurance companies have extended coverage for flood damages. We want to understand how valuable this information is for Dutch households. Remember that you may receive money for filling out this survey. You can choose between receiving this piece of information or receiving more money in case you are selected for payment. For each amount of money below, please choose whether you would prefer the piece of information or more money. Of all the choices, only one will be selected at random and your decision for that amount will be implemented.;0, 1
+cbond_link_click;Whether survey respondent clicked on the link to the Consumntenbond blog post;;;0, 1
+cbond_info_time_first_click;Time elapsed before first click on Consumentenbond blog post survey screen (in seconds);;;Non-negative number
+cbond_info_time_last_click;Time elapsed before last click on Consumentenbond blog post survey screen (in seconds);;;Non-negative number
+cbond_info_time_page_submit;Time spent on Consumentenbond blog post survey screen (in seconds);;;Non-negative number
+cbond_info_time_click_count;Times clicked on Consumentenbond blog post survey screen;;;Non-negative integer
+worry_RE_present;"Whether the survey respondent gave the outcome ""worry""";worry_RE;;0, 1
+risk_RE_present;"Whether the survey respondent gave the outcome ""risk""";risk_RE;;0, 1
+damages_RE_present;"Whether the survey respondent gave the outcome ""damages""";damages_RE;;0, 1
+comptot_RE_present;"Whether the survey respondent gave the outcome ""comptot""";comptot_RE;;0, 1
+compshare_RE_present;"Whether the survey respondent gave the outcome ""compshare""";compshare_RE;;0, 1
+wtp_info_present;"Whether the survey respondent gave the outcome ""wtp_info""";wtp_info;;0, 1
+wtp_insurance_present;"Whether the survey respondent gave the outcome ""wtp_insurance""";wtp_insurance;;0, 1
+any_outcome;At least one outcome is present;worry_RE, risk_RE, damages_RE, comptot_RE, compshare_RE, wtp_info, wtp_insurance;;0, 1
+treatment;Experimental arm the survey respondent is randomly assigned to;;;1, 2, 3, 4
+text_time_first_click;Time elapsed before first click on experimental text survey screen (in seconds);;;Non-negative number
+text_time_last_click;Time elapsed before last click on experimental text survey screen (in seconds);;;Non-negative number
+text_time_page_submit;Time spent on experimental text survey screen (in seconds);;;Non-negative number
+text_time_click_count;Times clicked on experimental text survey screen;;;Non-negative integer
+info_time_first_click;Time elapsed before first click on survey screen with correct answers to information-based questions (in seconds);;;Non-negative number
+info_time_last_click;Time elapsed before last click on survey screen with correct answers to information-based questions (in seconds);;;Non-negative number
+info_time_page_submit;Time spent on survey screen with correct answers to information-based questions (in seconds);;;Non-negative number
+info_time_click_count;Times clicked on survey screen with correct answers to information-based questions;;;Non-negative integer
+text_attention;Answer to attention check question, also referred to as text comprehension question;;"For treatment 1: Which animals and plants are found in the Rivierpark Maasvallei?, for treatment 2: Under the ""Small probability"" scenario (1 flood every 1000 years) and under the ""Medium probability"" scenario (1 flood every 100 years)... , for treatment 3: Under the WTS act, does the government fully compensate all flood damages?, for treatment 4: After the floods in Limburg in July 2021, insurance companies covered... ";"For treatment 1: Rare zinc and lime flora OR Lime flora, skylarks, and goldfinches OR Rare zinc, lime flora, and beavers OR Skylarks, goldfinches, and beavers, for treatment 2: The address floods OR The address floods only with ""Small probability""  OR The address floods only with ""Medium probability"" OR The address does not flood, for treatment 3: Yes, in all cases OR Yes, as long as the damages were not insurable, not recoverable, and not preventable OR Not necessarily, even if the damages were not insurable, not recoverable, and not preventable OR Never, even if the damages were not insurable, not recoverable, and not preventable, for treatment 4: Over 200 million euros in damages, 95% of the total damages from the floods OR Over 200 million euros in damages, 95% of the damage claims they received from households OR Over 350 million euros in damages, between 35% and 60% of the total damages from the floods  OR Over 600 million euros in damages, 95% of the damage claims they received from households"
+text_attention_passed;Whether the respondent passed the attention check;text_attention, flood_max_1_in_100_years, flood_max_1_in_1000_years;;0, 1
+text_easy_to_understand;The extent to which the survey respondent finds the experimental text easy to understand (in words);;Did you find that this text was easy to understand?;Not at all, Not so much, Somewhat, Very, Extremely
+text_easy_to_understand_numeric;The extent to which the survey respondent finds the experimental text easy to understand (numeric);text_easy_to_understand;;Integer between 1 and 5
+text_nice_read;The extent to which the survey respondent finds the experimental text a nice read (in words);;Did you find that this text was a nice read?;Not at all, Not so much, Somewhat, Very, Extremely
+text_nice_read_numeric;The extent to which the survey respondent finds the experimental text a nice read (numeric);text_nice_read;;Integer between 1 and 5
+text_emotions;The extent to which the survey respondent finds that the experimental text conveyed emotions (in words);;Did you find that this text conveyed emotions?;Not at all, Not so much, Somewhat, Very, Extremely
+text_emotions_numeric;The extent to which the survey respondent finds that the experimental text conveyed emotions (numeric);text_emotions;;Integer between 1 and 5
+clicks_maps;Times the survey respondent has clicked on the maps toggle box;;;Non-negative integer
+clicks_maps_indicator;Whether the survey respondent has clicked on the maps toggle box;clicks_maps;;0, 1
+clicks_wts;Times the survey respondent has clicked on the WTS toggle box;;;Non-negative integer
+clicks_wts_indicator;Whether the survey respondent has clicked on the WTS toggle box;clicks_wts;;0, 1
+clicks_insurance;Times the survey respondent has clicked on the insurance toggle box;;;Non-negative integer
+clicks_insurance_indicator;Whether the survey respondent has clicked on the insurance toggle box;clicks_insurance;;0, 1
+clicks_decoy;Times the survey respondent has clicked on the decoy (nature conservation) toggle box;;;Non-negative integer
+clicks_decoy_indicator;Whether the survey respondent has clicked on the decoy (nature conservation) toggle box;clicks_decoy;;0, 1
+clicked_how_many_boxes;Number of boxes clicked by the survey respodent;clicks_maps, clicks_wts, clicks_insurance, clicks_decoy;;Integer between 0 and 3
+clicked_boxes_0;Whether the survey respondent clicked 0 of the toggle boxes;clicked_how_many_boxes;;0, 1
+clicked_boxes_1;Whether the survey respondent clicked 1 of the toggle boxes;clicked_how_many_boxes;;0, 1
+clicked_boxes_2;Whether the survey respondent clicked 2 of the toggle boxes;clicked_how_many_boxes;;0, 1
+clicked_boxes_3;Whether the survey respondent clicked 3 of the toggle boxes;clicked_how_many_boxes;;0, 1
+first_box_clicked;Name of the first toggleable box clicked by the survey respondent;timestamps_maps, timestamps_wts, timestamps_insurance, timestamps_decoy;;0, 1
+second_box_clicked;Name of the second toggleable box clicked by the survey respondent;timestamps_maps, timestamps_wts, timestamps_insurance, timestamps_decoy;;0, 1
+third_box_clicked;Name of the third toggleable box clicked by the survey respondent;timestamps_maps, timestamps_wts, timestamps_insurance, timestamps_decoy;;0, 1
+read_all_flood_texts;Survey respondent has read all flood-related texts;clicks_maps_indicator, clicks_wts_indicator, clicks_insurance_indicator;;0, 1
+timestamps_maps;Time stamp(s) of when the maps toggle box was clicked;;;Time stamp
+timestamps_wts;Time stamp(s) of when the WTS toggle box was clicked;;;Time stamp
+timestamps_insurance;Time stamp(s) of when the insurance toggle box was clicked;;;Time stamp
+timestamps_decoy;Time stamp(s) of when the decoy (nature conservation) toggle box was clicked;;;Time stamp
+timestamps_submit;Time stamp(s) of when the submit button was clicked;;;Time stamp
+total_seconds_maps;Total seconds spent on maps toggle box;timestamps_maps, timestamps_wts, timestamps_insurance, timestamps_decoy, timestamps_submit;;Non-negative number
+conditional_total_seconds_maps;Total seconds spent on maps toggle box, conditional on clicking (0 seconds become missing values);total_seconds_maps;;Non-negative number
+conditional_total_seconds_maps_wins975;Total seconds spent on maps toggle box, conditional on clicking (0 seconds become missing values), winsorized at th 97.5th percentile;total_seconds_maps;;Non-negative number
+conditional_total_seconds_maps_wins99;Total seconds spent on maps toggle box, conditional on clicking (0 seconds become missing values), winsorized at th 99th percentile;total_seconds_maps;;Non-negative number
+total_seconds_wts;Total seconds spent on WTS toggle box;timestamps_maps, timestamps_wts, timestamps_insurance, timestamps_decoy, timestamps_submit;;Non-negative number
+conditional_total_seconds_wts;Total seconds spent on WTS toggle box, conditional on clicking (0 seconds become missing values);total_seconds_wts;;Non-negative number
+conditional_total_seconds_wts_wins975;Total seconds spent on WTS toggle box, conditional on clicking (0 seconds become missing values), winsorized at th 97.5th percentile;total_seconds_wts;;Non-negative number
+conditional_total_seconds_wts_wins99;Total seconds spent on WTS toggle box, conditional on clicking (0 seconds become missing values), winsorized at th 99th percentile;total_seconds_wts;;Non-negative number
+total_seconds_insurance;Total seconds spent on insurance toggle box;timestamps_maps, timestamps_wts, timestamps_insurance, timestamps_decoy, timestamps_submit;;Non-negative number
+conditional_total_seconds_insurance;Total seconds spent on insurance toggle box, conditional on clicking (0 seconds become missing values);total_seconds_insurance;;Non-negative number
+conditional_total_seconds_insurance_wins975;Total seconds spent on insurance toggle box, conditional on clicking (0 seconds become missing values), winsorized at th 97.5th percentile;total_seconds_insurance;;Non-negative number
+conditional_total_seconds_insurance_wins99;Total seconds spent on insurance toggle box, conditional on clicking (0 seconds become missing values), winsorized at th 99th percentile;total_seconds_insurance;;Non-negative number
+total_seconds_decoy;Total seconds spent on decoy (nature conservation) toggle box;timestamps_maps, timestamps_wts, timestamps_insurance, timestamps_decoy, timestamps_submit;;Non-negative number
+conditional_total_seconds_decoy;Total seconds spent on decoy (nature conservation) toggle box, conditional on clicking (0 seconds become missing values);total_seconds_decoy;;Non-negative number
+conditional_total_seconds_decoy_wins975;Total seconds spent on decoy (nature conservation) toggle box, conditional on clicking (0 seconds become missing values), winsorized at th 97.5th percentile;total_seconds_decoy;;Non-negative number
+conditional_total_seconds_decoy_wins99;Total seconds spent on decoy (nature conservation) toggle box, conditional on clicking (0 seconds become missing values), winsorized at th 99th percentile;total_seconds_decoy;;Non-negative number
+info_time_toggle;Total time spent on page with toggle boxes;info_time_page_submit, info_time_last_click;;Non-negative number
+approximate_time;Approximate time spent on the last box clicked in the toggle box survey screen. Only necessary for a hanfdul of observations in the very first pilot, where the time stamp in the submit button is missing.;info_time_toggle, total_seconds_maps, total_seconds_wts, total_seconds_insurance, total_seconds_decoy;;Non-negative number
+total_seconds_treatment_text;Total seconds spent on treatment text;treatment, total_seconds_decoy, total_seconds_maps, total_seconds_wts, total_seconds_insurance;;Non-negative number
+total_seconds_treatment_text_wins975;Total seconds spent on treatment text, winsorized at the 97.5th percentile;total_seconds_treatment_text;;Non-negative number
+total_seconds_treatment_text_wins99;Total seconds spent on treatment text, winsorized at the 99th percentile;total_seconds_treatment_text;;Non-negative number
+total_seconds_other_texts;Total seconds spent on non-treatment texts;treatment, total_seconds_decoy, total_seconds_maps, total_seconds_wts, total_seconds_insurance;;Non-negative number
+total_seconds_other_texts_wins975;Total seconds spent on non-treatment texts, winsorized at the 97.5th percentile;total_seconds_other_texts;;Non-negative number
+total_seconds_other_texts_wins99;Total seconds spent on non-treatment texts, winsorized at the 99th percentile;total_seconds_other_texts;;Non-negative number
+total_seconds_all_texts;Total seconds spent on all texts;total_seconds_decoy, total_seconds_maps, total_seconds_wts, total_seconds_insurance;;Non-negative number
+total_seconds_all_texts_wins975;Total seconds spent on all texts, winsorized at the 97.5th percentile;total_seconds_all_texts;;Non-negative number
+total_seconds_all_texts_wins99;Total seconds spent on all texts, winsorized at the 99th percentile;total_seconds_all_texts;;Non-negative number
+WEIGHTS;Sample weight;;;Positive number

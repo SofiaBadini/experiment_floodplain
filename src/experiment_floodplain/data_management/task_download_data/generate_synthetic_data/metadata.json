@@ -1,0 +1,483 @@
+{
+    "columns": {
+        "FLOOD_MAX_EN": {
+            "sdtype": "categorical"
+        },
+        "WATERDEPTH_MAX_EN": {
+            "sdtype": "categorical"
+        },
+        "consent": {
+            "sdtype": "categorical"
+        },
+        "StartDate": {
+            "sdtype": "datetime",
+            "datetime_format": "%Y-%m-%d %H:%M:%S"
+        },
+        "EndDate": {
+            "sdtype": "datetime",
+            "datetime_format": "%Y-%m-%d %H:%M:%S"
+        },
+        "Progress": {
+            "sdtype": "numerical"
+        },
+        "Duration (in seconds)": {
+            "sdtype": "numerical"
+        },
+        "Finished": {
+            "sdtype": "categorical"
+        },
+        "RecordedDate": {
+            "sdtype": "datetime",
+            "datetime_format": "%Y-%m-%d %H:%M:%S"
+        },
+        "UserLanguage": {
+            "sdtype": "categorical"
+        },
+        "payment": {
+            "sdtype": "categorical"
+        },
+        "consent_followup": {
+            "sdtype": "categorical"
+        },
+        "worry": {
+            "sdtype": "categorical"
+        },
+        "risk": {
+            "sdtype": "numerical"
+        },
+        "risk_conf_1": {
+            "sdtype": "categorical"
+        },
+        "damages": {
+            "sdtype": "numerical"
+        },
+        "damages_conf_1": {
+            "sdtype": "categorical"
+        },
+        "comptot_1": {
+            "sdtype": "numerical"
+        },
+        "comptot_conf_1": {
+            "sdtype": "categorical"
+        },
+        "compshare_1": {
+            "sdtype": "numerical"
+        },
+        "compshare_conf_1": {
+            "sdtype": "categorical"
+        },
+        "restoration": {
+            "sdtype": "categorical"
+        },
+        "restoration_conf_1": {
+            "sdtype": "categorical"
+        },
+        "floodmaps": {
+            "sdtype": "categorical"
+        },
+        "floodmaps_conf_1": {
+            "sdtype": "categorical"
+        },
+        "waterdepth": {
+            "sdtype": "categorical"
+        },
+        "waterdepth_conf_1": {
+            "sdtype": "categorical"
+        },
+        "WTS": {
+            "sdtype": "categorical"
+        },
+        "WTS_conf_1": {
+            "sdtype": "categorical"
+        },
+        "WTScomp": {
+            "sdtype": "categorical"
+        },
+        "WTScomp_conf_1": {
+            "sdtype": "categorical"
+        },
+        "claims_1": {
+            "sdtype": "numerical"
+        },
+        "claims_conf_1": {
+            "sdtype": "categorical"
+        },
+        "ins_rain": {
+            "sdtype": "categorical"
+        },
+        "ins_rain_conf_1": {
+            "sdtype": "categorical"
+        },
+        "ins_primary": {
+            "sdtype": "categorical"
+        },
+        "ins_primary_conf_1": {
+            "sdtype": "categorical"
+        },
+        "ins_secondary": {
+            "sdtype": "categorical"
+        },
+        "ins_secondary_conf_1": {
+            "sdtype": "categorical"
+        },
+        "info_value_1": {
+            "sdtype": "categorical"
+        },
+        "info_value_2": {
+            "sdtype": "categorical"
+        },
+        "info_value_3": {
+            "sdtype": "categorical"
+        },
+        "info_value_4": {
+            "sdtype": "categorical"
+        },
+        "treatment_assignment": {
+            "sdtype": "categorical"
+        },
+        "text_time_First Click": {
+            "sdtype": "numerical"
+        },
+        "text_time_Last Click": {
+            "sdtype": "numerical"
+        },
+        "text_time_Page Submit": {
+            "sdtype": "numerical"
+        },
+        "text_time_Click Count": {
+            "sdtype": "numerical"
+        },
+        "text_eval_1": {
+            "sdtype": "categorical"
+        },
+        "text_eval_2": {
+            "sdtype": "categorical"
+        },
+        "text_eval_3": {
+            "sdtype": "categorical"
+        },
+        "text_attention": {
+            "sdtype": "categorical"
+        },
+        "text_time_First Click.1": {
+            "sdtype": "numerical"
+        },
+        "text_time_Last Click.1": {
+            "sdtype": "numerical"
+        },
+        "text_time_Page Submit.1": {
+            "sdtype": "numerical"
+        },
+        "text_time_Click Count.1": {
+            "sdtype": "numerical"
+        },
+        "text_eval_1.1": {
+            "sdtype": "categorical"
+        },
+        "text_eval_2.1": {
+            "sdtype": "categorical"
+        },
+        "text_eval_3.1": {
+            "sdtype": "categorical"
+        },
+        "text_attention.1": {
+            "sdtype": "categorical"
+        },
+        "text_time_First Click.2": {
+            "sdtype": "numerical"
+        },
+        "text_time_Last Click.2": {
+            "sdtype": "numerical"
+        },
+        "text_time_Page Submit.2": {
+            "sdtype": "numerical"
+        },
+        "text_time_Click Count.2": {
+            "sdtype": "numerical"
+        },
+        "text_eval_1.2": {
+            "sdtype": "categorical"
+        },
+        "text_eval_2.2": {
+            "sdtype": "categorical"
+        },
+        "text_eval_3.2": {
+            "sdtype": "categorical"
+        },
+        "text_attention.2": {
+            "sdtype": "categorical"
+        },
+        "text_time_First Click.3": {
+            "sdtype": "numerical"
+        },
+        "text_time_Last Click.3": {
+            "sdtype": "numerical"
+        },
+        "text_time_Page Submit.3": {
+            "sdtype": "numerical"
+        },
+        "text_time_Click Count.3": {
+            "sdtype": "numerical"
+        },
+        "text_eval_1.3": {
+            "sdtype": "categorical"
+        },
+        "text_eval_2.3": {
+            "sdtype": "categorical"
+        },
+        "text_eval_3.3": {
+            "sdtype": "categorical"
+        },
+        "text_attention.3": {
+            "sdtype": "categorical"
+        },
+        "clicks_maps": {
+            "sdtype": "categorical"
+        },
+        "timestamps_maps": {
+            "sdtype": "unknown",
+            "pii": true
+        },
+        "clicks_wts": {
+            "sdtype": "categorical"
+        },
+        "timestamps_wts": {
+            "sdtype": "unknown",
+            "pii": true
+        },
+        "clicks_insurance": {
+            "sdtype": "categorical"
+        },
+        "timestamps_insurance": {
+            "sdtype": "unknown",
+            "pii": true
+        },
+        "clicks_decoy": {
+            "sdtype": "categorical"
+        },
+        "timestamps_decoy": {
+            "sdtype": "categorical"
+        },
+        "timestamps_submit": {
+            "sdtype": "unknown",
+            "pii": true
+        },
+        "info_time_First Click": {
+            "sdtype": "numerical"
+        },
+        "info_time_Last Click": {
+            "sdtype": "numerical"
+        },
+        "info_time_Page Submit": {
+            "sdtype": "numerical"
+        },
+        "info_time_Click Count": {
+            "sdtype": "numerical"
+        },
+        "info_time_First Click.1": {
+            "sdtype": "numerical"
+        },
+        "info_time_Last Click.1": {
+            "sdtype": "numerical"
+        },
+        "info_time_Page Submit.1": {
+            "sdtype": "numerical"
+        },
+        "info_time_Click Count.1": {
+            "sdtype": "numerical"
+        },
+        "info_time_First Click.2": {
+            "sdtype": "numerical"
+        },
+        "info_time_Last Click.2": {
+            "sdtype": "numerical"
+        },
+        "info_time_Page Submit.2": {
+            "sdtype": "numerical"
+        },
+        "info_time_Click Count.2": {
+            "sdtype": "numerical"
+        },
+        "info_time_First Click.3": {
+            "sdtype": "numerical"
+        },
+        "info_time_Last Click.3": {
+            "sdtype": "numerical"
+        },
+        "info_time_Page Submit.3": {
+            "sdtype": "numerical"
+        },
+        "info_time_Click Count.3": {
+            "sdtype": "numerical"
+        },
+        "floodrisk_kaart": {
+            "sdtype": "categorical"
+        },
+        "floodrisk_helpdesk": {
+            "sdtype": "categorical"
+        },
+        "WTS_overheid": {
+            "sdtype": "categorical"
+        },
+        "WTS_rvo": {
+            "sdtype": "categorical"
+        },
+        "liability_verz": {
+            "sdtype": "categorical"
+        },
+        "grensmaas": {
+            "sdtype": "categorical"
+        },
+        "household_members": {
+            "sdtype": "categorical"
+        },
+        "how_long_residing": {
+            "sdtype": "categorical"
+        },
+        "hh_member_residing": {
+            "sdtype": "categorical"
+        },
+        "hh_member_how_long": {
+            "sdtype": "categorical"
+        },
+        "how_long_planning": {
+            "sdtype": "categorical"
+        },
+        "homeownership": {
+            "sdtype": "categorical"
+        },
+        "preparedness": {
+            "sdtype": "categorical"
+        },
+        "house_elevation": {
+            "sdtype": "categorical"
+        },
+        "julyflood_damages": {
+            "sdtype": "categorical"
+        },
+        "julyflood_comp": {
+            "sdtype": "categorical"
+        },
+        "education": {
+            "sdtype": "categorical"
+        },
+        "household_income": {
+            "sdtype": "categorical"
+        },
+        "gender": {
+            "sdtype": "categorical"
+        },
+        "age": {
+            "sdtype": "categorical"
+        },
+        "municipality": {
+            "sdtype": "categorical"
+        },
+        "own_background": {
+            "sdtype": "categorical"
+        },
+        "agree_transparent": {
+            "sdtype": "categorical"
+        },
+        "source_info": {
+            "sdtype": "categorical"
+        },
+        "damages_RE": {
+            "sdtype": "numerical"
+        },
+        "damages_conf_RE_1": {
+            "sdtype": "categorical"
+        },
+        "risk_RE": {
+            "sdtype": "numerical"
+        },
+        "risk_conf_RE_1": {
+            "sdtype": "categorical"
+        },
+        "comptot_RE_1": {
+            "sdtype": "numerical"
+        },
+        "comptot_conf_RE_1": {
+            "sdtype": "categorical"
+        },
+        "compshare_RE_1": {
+            "sdtype": "numerical"
+        },
+        "compshare_conf_RE_1": {
+            "sdtype": "categorical"
+        },
+        "worry_RE": {
+            "sdtype": "categorical"
+        },
+        "wtp_scenario": {
+            "sdtype": "numerical"
+        },
+        "wtp_answer": {
+            "sdtype": "categorical"
+        },
+        "insurance_wtp": {
+            "sdtype": "numerical"
+        },
+        "extra_info_1": {
+            "sdtype": "categorical"
+        },
+        "extra_info_2": {
+            "sdtype": "categorical"
+        },
+        "extra_info_3": {
+            "sdtype": "categorical"
+        },
+        "extra_info_4": {
+            "sdtype": "categorical"
+        },
+        "extra_info_5": {
+            "sdtype": "categorical"
+        },
+        "extra_info_6": {
+            "sdtype": "categorical"
+        },
+        "extra_info_7": {
+            "sdtype": "categorical"
+        },
+        "extra_info_8": {
+            "sdtype": "categorical"
+        },
+        "extra_info_9": {
+            "sdtype": "categorical"
+        },
+        "extra_info_10": {
+            "sdtype": "categorical"
+        },
+        "extra_info_11": {
+            "sdtype": "categorical"
+        },
+        "consumentenbond": {
+            "sdtype": "categorical"
+        },
+        "cbond_info_time_First Click": {
+            "sdtype": "numerical"
+        },
+        "cbond_info_time_Last Click": {
+            "sdtype": "numerical"
+        },
+        "cbond_info_time_Page Submit": {
+            "sdtype": "numerical"
+        },
+        "cbond_info_time_Click Count": {
+            "sdtype": "numerical"
+        },
+        "WEIGHTS": {
+            "sdtype": "numerical"
+        },
+        "dist_floodareas": {
+            "sdtype": "numerical"
+        },
+        "FLOODED": {
+            "sdtype": "categorical"
+        },
+        "GEMNAME_2022": {
+            "sdtype": "categorical"
+        }
+    },
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1"
+}

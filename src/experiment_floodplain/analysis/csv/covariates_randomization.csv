@@ -1,0 +1,27 @@
+DESCRIPTION;VARNAME
+Male;gender_male
+Dutch;own_background_yes
+Younger than 45;age_younger_than_45
+Between 45 and 64 years old;age_between_45_and_64_years_old
+Older than 65;age_older_than_65_years_old
+Education: HBO or higher;edu_hbo_or_higher
+Beliefs about flood probability;risk
+Beliefs about damages;damages_wins975_1000
+Beliefs about compensated damages;comptot
+Beliefs about govt. compensation;compshare
+Worry about house being flooded;worry_numeric
+Homeowner;homeownership_yes
+Household income < 2500 EUR;household_income_min2500
+Household income > 2500 EUR;household_income_m2500
+Household size: 1;household_members_1
+Household size: 2;household_members_2
+Household size: 3+;household_members_3m
+Time resident > 10 years;time_residing_m10
+Planning to reside for > 10 years;time_planning_m10
+Flood damages in July 2021;julyflood_damages_yes
+Max. water depth < 0.5m;waterdepth_max_less_than_05m
+Max. water depth > 2m;waterdepth_max_over_2m
+Return period: 1 in 100 years;flood_max_1_in_100_years
+Return period: 1 in 1000 years;flood_max_1_in_1000_years
+Return period: 1 in 10000 years;flood_max_1_in_10000_years
+In July 2021 floodplain;FLOODED

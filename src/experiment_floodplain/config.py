@@ -5,8 +5,7 @@ SRC = Path(__file__).parent.resolve()
 BLD = SRC.joinpath("..", "..", "bld").resolve()
 
 TEST_DIR = SRC.joinpath("..", "..", "tests").resolve()
-PAPER_DIR = SRC.joinpath("..", "..", "paper").resolve()
+PAPER_DIR = SRC.joinpath("..", "..", "paper_results_replication").resolve()
+DOCS = SRC.joinpath("..", "..", "docs").resolve()
 
-GROUPS = ["marital_status", "qualification"]
-
-__all__ = ["BLD", "SRC", "TEST_DIR", "GROUPS"]
+__all__ = ["BLD", "SRC", "TEST_DIR", "PAPER_DIR", "DOCS"]

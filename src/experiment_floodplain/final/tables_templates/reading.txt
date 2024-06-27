@@ -1,0 +1,39 @@
+\begin{{table}}[!t]
+\caption{{Information acquisition behavior}}
+\small
+\centering
+\noindent\adjustbox{{max width=\textwidth}}{{%
+\begin{{tabular}}{{m{{1.2ex}}m{{2.25cm}}*{{4}}{{M{{2cm}} M{{1.5cm}} M{{1.5cm}} M{{2cm}} M{{2cm}} M{{2cm}}}}}}
+\toprule
+\multicolumn{{2}}{{c}}{{}}
+ &
+ \multicolumn{{4}}{{M{{7cm}}}}{{Respondents who saw the text and average time spent}}
+ &
+ \multicolumn{{1}}{{M{{2cm}}}}{{Attention check passed}}
+ &
+ \multicolumn{{1}}{{M{{2cm}}}}{{Read all flood texts}}
+ \\
+ \cmidrule(l){{3-6}} \cmidrule(l){{7-7}} \cmidrule(l){{8-8}}
+ & & Neutral text & Risk profile & Govt. comp. & Insurance & \\
+ \multirow[t]{{10}}{{*}}{{Treatment}} \\ 
+& Neutral text & {a1} & {a2} & {a3} & {a4} & {t1} & {r1} \\
+& & ({sa1}) & ({sa2}) & ({sa3}) & ({sa4}) & & \\
+\rule{{0pt}}{{1ex}} \\
+& Risk profile & {b1} & {b2} & {b3} & {b4} & {t2} & {r2} \\
+& & ({sb1}) & ({sb2}) & ({sb3}) & ({sb4}) & & \\
+\rule{{0pt}}{{1ex}} \\
+& Govt. comp. & {c1} & {c2} & {c3} & {c4} & {t3} & {r3} \\
+& & ({sc1}) & ({sc2}) & ({sc3}) & ({sc4}) & & \\
+\rule{{0pt}}{{1ex}} \\
+& Insurance & {d1} & {d2} & {d3} & {d4} & {t4} & {r4} \\
+& & ({sd1}) & ({sd2}) & ({sd3}) & ({sd4}) & & \\
+\bottomrule
+\end{{tabular}}}}
+
+\medskip
+\footnotesize
+\justifying
+\textit{{Notes}}: For each treatment arm, this table displays the share of respondents that click on each piece of information, the average time spent on each piece of information  conditional on clicking (between parentheses), the share of respondents who answered correctly to the text-comprehension question on the assigned text, and the share of respondents who read all flood-related texts. The text assigned during the survey experiment is considered as seen by the respondents. Time spent conditional on clicking is winsorized at the 97.5\% percentile (the results are virtually unchanged when winsorizing at the 99\% percentile, as two single outliers skew the results).
+
+\label{{tab:reading}}
+\end{{table}}

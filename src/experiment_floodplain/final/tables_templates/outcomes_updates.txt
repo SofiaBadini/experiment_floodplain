@@ -1,0 +1,100 @@
+\begin{{landscape}}
+\global\pdfpageattr\expandafter{{\the\pdfpageattr/Rotate 90}}
+\begin{{table}}[t]
+\caption{{Effect on belief updating}}
+\small
+\centering
+\noindent\adjustbox{{max height=0.3\textheight}}{{%
+\begin{{tabular}}{{m{{1.2ex}}m{{2.5cm}}*{{7}}{{ccccccccccccccccccccc}}}}
+\toprule
+\multicolumn{{2}}{{c}}{{}}
+ &
+\multicolumn{{4}}{{c}}{{10-year flood prob.}}
+ &
+\multicolumn{{4}}{{c}}{{Damages (kEUR)}}
+ &
+\multicolumn{{4}}{{c}}{{Tot. comp. (\%)}}
+ &
+\multicolumn{{4}}{{c}}{{Govt. comp. (\%)}}
+ &
+\multicolumn{{4}}{{c}}{{Worry}}
+\\
+\cmidrule(lr){{3-6}} 
+\cmidrule(lr){{7-10}} 
+\cmidrule(lr){{11-14}} 
+\cmidrule(lr){{15-18}} 
+\cmidrule(lr){{19-22}} 
+\multicolumn{{2}}{{M{{1cm}}}}{{}}
+ &
+ \multicolumn{{1}}{{M{{1.35cm}}}}{{(1)}}
+ &
+ \multicolumn{{1}}{{M{{1.35cm}}}}{{(2)}}
+ &
+  \multicolumn{{1}}{{M{{1.35cm}}}}{{(3)}}
+ &
+ \multicolumn{{1}}{{M{{1.35cm}}}}{{(4)}} 
+  &
+\multicolumn{{1}}{{M{{1.35cm}}}}{{(5)}}
+ &
+ \multicolumn{{1}}{{M{{1.35cm}}}}{{(6)}}
+ &
+ \multicolumn{{1}}{{M{{1.35cm}}}}{{(7)}} 
+  &
+ \multicolumn{{1}}{{M{{1.35cm}}}}{{(8)}} 
+   &
+\multicolumn{{1}}{{M{{1.35cm}}}}{{(9)}}
+ &
+ \multicolumn{{1}}{{M{{1.35cm}}}}{{(10)}}
+ &
+ \multicolumn{{1}}{{M{{1.35cm}}}}{{(11)}} 
+  &
+ \multicolumn{{1}}{{M{{1.35cm}}}}{{(12)}} 
+   &
+\multicolumn{{1}}{{M{{1.35cm}}}}{{(13)}}
+ &
+ \multicolumn{{1}}{{M{{1.35cm}}}}{{(14)}}
+ &
+ \multicolumn{{1}}{{M{{1.35cm}}}}{{(15)}} 
+  &
+ \multicolumn{{1}}{{M{{1.35cm}}}}{{(16)}} 
+   &
+\multicolumn{{1}}{{M{{1.35cm}}}}{{(17)}}
+ &
+ \multicolumn{{1}}{{M{{1.35cm}}}}{{(18)}}
+ &
+ \multicolumn{{1}}{{M{{1.35cm}}}}{{(19)}} 
+  &
+ \multicolumn{{1}}{{M{{1.35cm}}}}{{(20)}} 
+ \\
+ \midrule
+\multirow[t]{{8}}{{*}}{{Treatment}} \\
+ & Risk profile & {a1} & {a2} & {a3} & {a4} & {a5} & {a6} & {a7} & {a8} & {a9} & {a10} & {a11} & {a12} & {a13} & {a14} & {a15} & {a16} & {a17} & {a18} & {a19} & {a20} \\
+& & ({sa1}) & ({sa2}) & ({sa3}) & ({sa4}) & ({sa5}) & ({sa6}) & ({sa7}) & ({sa8}) & ({sa9}) & ({sa10}) & ({sa11}) & ({sa12}) & ({sa13}) & ({sa14}) & ({sa15}) & ({sa16}) & ({sa17}) & ({sa18}) & ({sa19}) & ({sa20}) \\
+ & & [{pa1}] & [{pa2}] & [{pa3}] & [{pa4}] & [{pa5}] & [{pa6}] & [{pa7}] & [{pa8}] & [{pa9}] & [{pa10}] & [{pa11}] & [{pa12}] & [{pa13}] & [{pa14}] & [{pa15}] & [{pa16}] & [{pa17}] & [{pa18}] & [{pa19}] & [{pa20}] \\
+ \rule{{0pt}}{{1ex}} \\
+ & Govt. comp. & {b1} & {b2} & {b3} & {b4} & {b5} & {b6} & {b7} & {b8} & {b9} & {b10} & {b11} & {b12} & {b13} & {b14} & {b15} & {b16} & {b17} & {b18} & {b19} & {b20} \\
+& & ({sb1}) & ({sb2}) & ({sb3}) & ({sb4}) & ({sb5}) & ({sb6}) & ({sb7}) & ({sb8}) & ({sb9}) & ({sb10}) & ({sb11}) & ({sb12}) & ({sb13}) & ({sb14}) & ({sb15}) & ({sb16}) & ({sb17}) & ({sb18}) & ({sb19}) & ({sb20}) \\
+ & & [{pb1}] & [{pb2}] & [{pb3}] & [{pb4}] & [{pb5}] & [{pb6}] & [{pb7}] & [{pb8}] & [{pb9}] & [{pb10}] & [{pb11}] & [{pb12}] & [{pb13}] & [{pb14}] & [{pb15}] & [{pb16}] & [{pb17}] & [{pb18}] & [{pb19}] & [{pb20}] \\
+\rule{{0pt}}{{1ex}} \\
+& Insurance & {c1} & {c2} & {c3} & {c4} & {c5} & {c6} & {c7} & {c8} & {c9} & {c10} & {c11} & {c12} & {c13} & {c14} & {c15} & {c16} & {c17} & {c18} & {c19} & {c20} \\
+& & ({sc1}) & ({sc2}) & ({sc3}) & ({sc4}) & ({sc5}) & ({sc6}) & ({sc7}) & ({sc8}) & ({sc9}) & ({sc10}) & ({sc11}) & ({sc12}) & ({sc13}) & ({sc14}) & ({sc15}) & ({sc16}) & ({sc17}) & ({sc18}) & ({sc19}) & ({sc20}) \\
+ & & [{pc1}] & [{pc2}] & [{pc3}] & [{pc4}] & [{pc5}] & [{pc6}] & [{pc7}] & [{pc8}] & [{pc9}] & [{pc10}] & [{pc11}] & [{pc12}] & [{pc13}] & [{pc14}] & [{pc15}] & [{pc16}] & [{pc17}] & [{pc18}] & [{pc19}] & [{pc20}] \\
+ \rule{{0pt}}{{1ex}} \\
+ \multirow[t]{{1}}{{*}}{{Controls}} & & & x & xx & xx & & x & xx & xx & & x & xx & xx & & x & xx & xx & & x & xx & xx \\
+  \multirow[t]{{1}}{{*}}{{Post-lasso}} & & & & x & & & & x & & & & x & & & & x & & & & x & \\
+    \multirow[t]{{1}}{{*}}{{Double selection}} & & & & & x & & & & x & & & & x & & & & x & & & & x \\
+ \multirow[t]{{1}}{{*}}{{Number of obs.}} & & {n1} & {n2} & {n3} & {n4} & {n5} & {n6} & {n7} & {n8} & {n9} & {n10} & {n11} & {n12} & {n13} & {n14} & {n15} & {n16} & {n17} & {n18} & {n19} & {n20} \\
+ \bottomrule
+\end{{tabular}}}}
+
+
+\medskip
+\footnotesize
+\justifying
+\begin{{adjustwidth}}{{0pt}}{{-37pt}}
+\hspace{{\parindent}} \textit{{Notes}}: Average treatment effects are estimated via an unadjusted linear regression (columns 1, 5, 9, 13, 17), a linear regression including a narrow set of pre-specified covariates (columns 2, 6, 10, 14, 18), and partial regressions on treatment assignment and a broader set of 38 covariates selected via post-Lasso partialling out (\cite{{Belloni2013a}}, columns 3, 7, 11, 15, 19) and post-double-selection (\cite{{Belloni2013b}}, columns 4, 8, 12, 16, 20) respectively. I use robust standard errors and sample inclusion probabilities as regressions weights. The \textit{{q}}-values are adjusted for multiple hypotheses testing via the two-stage Benjamini, Krieger, and Yekutieli (\cite{{Benjamini2006}}) procedure for controlling the false discovery rate, considering the 24 pre-registered hypotheses.
+\end{{adjustwidth}}
+
+\label{{tab:outcomes-updates}}
+\end{{table}}
+\end{{landscape}}

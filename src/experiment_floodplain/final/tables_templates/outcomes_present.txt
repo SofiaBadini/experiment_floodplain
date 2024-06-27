@@ -1,0 +1,53 @@
+\begin{{table}}[H]
+\caption{{Treatment assignment on whether outcome is present}}
+\small
+\centering
+\noindent\adjustbox{{max width=\textwidth}}{{%
+\begin{{tabular}}{{m{{1.2ex}}m{{2cm}}*{{8}}{{cccccccc}}}}
+\toprule
+\multicolumn{{2}}{{M{{1cm}}}}{{}}
+ &
+ \multicolumn{{1}}{{M{{2cm}}}}{{10-year flood prob.}}
+ &
+ \multicolumn{{1}}{{M{{2cm}}}}{{Damages (kEUR)}}
+ &
+  \multicolumn{{1}}{{M{{2cm}}}}{{Tot comp. (\%)}}
+ &
+ \multicolumn{{1}}{{M{{2cm}}}}{{Govt. comp. (\%)}} 
+  &
+\multicolumn{{1}}{{M{{2cm}}}}{{Worry}}
+ &
+ \multicolumn{{1}}{{M{{2cm}}}}{{WTP ins.}}
+ &
+ \multicolumn{{1}}{{M{{2cm}}}}{{WTP info.}} \\
+ \midrule
+\multirow[t]{{1}}{{*}}{{Intercept}} & & {a1} & {a2} & {a3} & {a4} & {a5} & {a6} & {a7} \\
+& & ({sa1}) & ({sa2}) & ({sa3}) & ({sa4}) & ({sa5}) & ({sa6}) & ({sa7}) \\
+& & [{qa1}] & [{qa2}] & [{qa3}] & [{qa4}] & [{qa5}] & [{qa6}] & [{qa7}] \\
+\rule{{0pt}}{{1ex}} \\
+\multirow[t]{{8}}{{*}}{{Treatment}} \\
+\rule{{0pt}}{{1ex}} \\
+ & Risk profile & {b1} & {b2} & {b3} & {b4} & {b5} & {b6} & {b7} \\
+& & ({sb1}) & ({sb2}) & ({sb3}) & ({sb4}) & ({sb5}) & ({sb6}) & ({sb7}) \\
+& & [{qb1}] & [{qb2}] & [{qb3}] & [{qb4}] & [{qb5}] & [{qb6}] & [{qb7}] \\
+ \rule{{0pt}}{{1ex}} \\
+ & Govt. comp. & {c1} & {c2} & {c3} & {c4} & {c5} & {c6} & {c7} & \\
+& & ({sc1}) & ({sc2}) & ({sc3}) & ({sc4}) & ({sc5}) & ({sc6}) & ({sc7}) \\
+& & [{qc1}] & [{qc2}] & [{qc3}] & [{qc4}] & [{qc5}] & [{qc6}] & [{qc7}] \\
+\rule{{0pt}}{{1ex}} \\
+& Insurance & {d1} & {d2} & {d3} & {d4} & {d5} & {d6} & {d7} \\
+& & ({sd1}) & ({sd2}) & ({sd3}) & ({sd4}) & ({sd5}) & ({sd6}) & ({sd7}) \\
+& & [{qd1}] & [{qd2}] & [{qd3}] & [{qd4}] & [{qd5}] & [{qd6}] & [{qd7}] \\
+ \rule{{0pt}}{{1ex}} \\
+ \multirow[t]{{1}}{{*}}{{LLR p-value}} & & {p1} & {p2} & {p3} & {p4} & {p5} & {p6} & {p7} & \\
+ \multirow[t]{{1}}{{*}}{{Number of obs.}} & & {n1} & {n2} & {n3} & {n4} & {n5} & {n6} & {n7} \\
+ \bottomrule
+\end{{tabular}}}}
+
+
+\medskip
+\footnotesize
+\justifying
+\textit{{Notes}}: This table presents the results of a logistic regression that tests if treatment assignment predicts whether survey respondents provide any given outcome. The data include all survey respondents who reached the experimental part of the survey (i.e. were shown the treatment texts). The results are unchanged if the sample is restricted to only those survey respondents that provided at least one outcome, or if the 14 pre-specified controls are included. The latter reduce coefficient estimates and significance even further. P-values (in square brackets) are unadjusted for multiple hypotheses testing.
+\label{{tab:outcomes_present}}
+\end{{table}}
