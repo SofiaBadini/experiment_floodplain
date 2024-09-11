@@ -789,3 +789,70 @@ def compute_mean_and_ttest(df, var, split_by):
     ).pvalue
 
     return res_df
+
+
+def make_conditional_belief_updates_table(df, groupby_col, groupby_col_name):
+    """Tabulate direction of belief updates over 10-year flood probability,
+    classified based on baseline information frictions with respect to Risicokaart
+    flood maps (return period of a flood at the address of residence), conditional 
+    on column `groupby_col`.
+    
+    """
+    direction_dfs = []
+    for treatment, treatment_name in zip(
+        [1, 2, 3, 4], 
+        ["neutral_text", "risk_profile", "government_compensation", "insurance"]):
+        direction_df = (df
+            .query("treatment == @treatment")
+            .groupby(groupby_col)
+            .risk_update_direction_cat
+            .value_counts(normalize=True)
+            .to_frame().reset_index()
+        )
+        direction_df = direction_df.rename(columns={
+            groupby_col: groupby_col_name,
+            "risk_update_direction_cat": "update_direction",
+            "proportion": treatment_name
+            })
+        direction_df[treatment_name] = direction_df[treatment_name].round(3) * 100
+        direction_df["update_direction"] = direction_df["update_direction"].replace({
+            "0.0": "no_update", 
+            "wrong": "unexpected_direction",
+            "right": "expected_direction",
+            "nan": "not_reported"
+            })
+        direction_df = direction_df.set_index([groupby_col_name, "update_direction"])
+        direction_dfs.append(direction_df)
+
+    direction_df = pd.concat(direction_dfs, axis=1)
+
+    return direction_df
+
+
+def assess_risk_update_direction(df):
+    """Create column indicating whether belief updating over 
+    10-year flood probability is expected or unexpected based 
+    on baseline information frictions with respect to Risicokaart
+    flood maps.
+    
+    """
+
+    df["risk_update_abs"] = np.abs(df["risk_update"])
+    df["risk_update_direction"] = np.where(
+        (df["risk_update_abs"] > -1) &
+        (df["risk_update_abs"] < 1) &
+        (df["risk_update_abs"] != 0),
+        1, df["risk_update_abs"]
+    )
+
+    df["risk_update_direction"] = np.where(
+        df["risk_revise_expected"] == 0, -df["risk_update_direction"], np.where(
+            df["risk_revise_expected"] == 1, df["risk_update_direction"], np.nan
+        ))
+    df["risk_update_direction"] = df["risk_update_direction"].replace(-0, 0)
+    df["risk_update_direction_cat"] = np.where(df["risk_update_direction"] < 0, "wrong", np.where(
+        df["risk_update_direction"] > 0, 'right', df["risk_update_direction"]
+    ))
+    df["risk_update_direction"] = df["risk_update_direction"].astype("category")
+
+    return df

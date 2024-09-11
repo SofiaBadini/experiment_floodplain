@@ -22,7 +22,9 @@ The results are saved as .csv files in *bld/analysis/beliefs*. These are:
      - All belief updates.
    * - summary_beliefs_updates_direction.csv
      - Belief updates, by expected direction of the updates (based on baseline information frictions).
-
+   * - summary_risk_updates_direction.csv
+     - Belief update over 10-year flood probability, by expected direction of the updates (based on baseline information frictions), 
+       tabulated by objective flood risk category.
 """
 
 import pytask
@@ -33,7 +35,12 @@ import pathlib
 from experiment_floodplain.config import SRC, BLD
 
 from experiment_floodplain.analysis.PYTHON.descriptive_stats import (
-    get_summary_stats, get_conditional_summary_stats, compute_updating_stats, compute_share_of_updates
+    get_summary_stats, 
+    get_conditional_summary_stats, 
+    compute_updating_stats, 
+    compute_share_of_updates,
+    assess_risk_update_direction,
+    make_conditional_belief_updates_table
 )
 
 depends_on = BLD / "data" / "survey_data.csv"
@@ -45,7 +52,8 @@ produces = {
     "damages": beliefs_path / "summary_beliefs_damages.csv",
     "quartiles": beliefs_path / "summary_beliefs_quartiles.csv",
     "updates":  beliefs_path / "summary_beliefs_updates.csv",
-    "direction":  beliefs_path / "summary_beliefs_updates_direction.csv"
+    "direction":  beliefs_path / "summary_beliefs_updates_direction.csv",
+    "risk_direction": beliefs_path / "summary_risk_updates_direction.csv"
     }
 
 @pytask.mark.depends_on(depends_on)
@@ -80,6 +88,9 @@ def task_summary_beliefs(depends_on, produces):
     # create "updates" columns
     for belief, belief_RE in zip(beliefs, beliefs_RE):
         survey_df[f"{belief}_update"] = abs(survey_df[belief_RE] - survey_df[belief])
+
+    # create additional column reflecting direction of belief updating
+    survey_df = assess_risk_update_direction(survey_df)
 
     # compute summary statistics of beliefs (unconditional)
     summary_df = get_summary_stats(survey_df, beliefs)
@@ -167,6 +178,10 @@ def task_summary_beliefs(depends_on, produces):
             ) for belief in beliefs
         ], axis=1, keys=beliefs).round(3)
 
+    # belief updating over 10-year flood probability, by direction and other covariates 
+    risk_direction_df = make_conditional_belief_updates_table(
+        survey_df, "correct_floodmaps", "risicokaart_flood_probability"
+    )
 
     # save everything
     summary_df.to_csv(produces["all"], sep=";")
@@ -176,3 +191,4 @@ def task_summary_beliefs(depends_on, produces):
     beliefs_quartiles.to_csv(produces["quartiles"], sep=";") # stats. by quartile
     updates_df.to_csv(produces["updates"], sep=";") # updating stats.
     direction_df.to_csv(produces["direction"], sep=";") # updating stats., share of expected direction
+    risk_direction_df.to_csv(produces["risk_direction"], sep=";") # updating stats., 10-year flood prob.

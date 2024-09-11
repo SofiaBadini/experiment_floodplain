@@ -1,0 +1,43 @@
+\renewcommand{{\baselinestretch}}{{.9}} 
+\begin{{table}}[t]
+\caption{{Direction of belief updates over 10-year flood probability, by flood probability category}}
+\small
+\centering
+\noindent\adjustbox{{max width=\textwidth}}{{%
+\begin{{tabular}}{{m{{2ex}}m{{5cm}}*{{6}}{{m{{2.5cm}} m{{2.5cm}} m{{3.5cm}} m{{2.5cm}}}}}}
+\toprule
+\multicolumn{{6}}{{c}}{{Percentage of updates over 10-year flood prob.}} \\
+\cmidrule(l){{3-6}}
+ %\rule{{0pt}}{{1ex}} \\
+ & Correct flood probability & Neutral text & Risk profile & Govt. compensation & Insurance \\
+ \rule{{0pt}}{{1ex}} \\
+\multirow[t]{{5}}{{*}}{{1 in 100 years}} \\ 
+& No update & {a1} & {a2} & {a3} & {a4} \\
+& Expected direction & {b1} & {b2} & {b3} & {b4} \\
+& Unexpected direction & {c1} & {c2} & {c3} & {c4} \\
+& Not reported & {d1} & {d2} & {d3} & {d4} \\
+& \textbf{{Total}} & 100 & 100 & 100 & 100 \\
+\rule{{0pt}}{{1ex}} \\
+\multirow[t]{{5}}{{*}}{{1 in 1,000 years}} \\ 
+& No update & {e1} & {e2} & {e3} & {e4} \\
+& Expected direction & {f1} & {f2} & {f3} & {f4} \\
+& Unexpected direction & {g1} & {g2} & {g3} & {g4} \\
+& Not reported & {h1} & {h2} & {h3} & {h4} \\
+& \textbf{{Total}} & 100 & 100 & 100 & 100 \\
+\rule{{0pt}}{{1ex}} \\
+\multirow[t]{{5}}{{*}}{{1 in 10,000 years}} \\ 
+& No update & {i1} & {i2} & {i3} & {i4} \\
+& Expected direction & {l1} & {l2} & {l3} & {l4} \\
+& Unexpected direction & {m1} & {m2} & {m3} & {m4} \\
+& Not reported & {n1} & {n2} & {n3} & {n4} \\
+& \textbf{{Total}} & 100 & 100 & 100 & 100 \\
+\bottomrule
+\end{{tabular}}}}
+
+\medskip
+\footnotesize
+\justifying
+\textit{{Notes}}: This table classifies survey respondents' belief updates as ``expected'' or ``unexpected'' (as well as cases where there is no belief updating, or beliefs are not reported) based on their baseline information frictions over the flood probability at their address according to publicly available flood maps. The respondents are further classified by their objective flood probability and by treatment assignment. 
+
+\label{{tab:risk_direction}}
+\end{{table}}

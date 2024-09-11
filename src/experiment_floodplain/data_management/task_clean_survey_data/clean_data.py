@@ -1362,7 +1362,7 @@ def add_revise_beliefs_variables(df):
             ]
         choices = [1, 1, 1, np.nan]
         df[f"{belief}_revise_expected"] = np.select(conditions, choices, 0)
-    
+
         conditions = [
             ((df["friction_WTS_indicator"] == 1) | (df["friction_WTScomp_indicator"] == 1)),
             ((df["friction_WTS_indicator"].isna()) & (df["friction_WTScomp_indicator"].isna()))
